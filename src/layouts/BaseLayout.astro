@@ -1,0 +1,152 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'CorteZap — Agendamento inteligente pelo WhatsApp para barbearias',
+  description = 'Automatize o agendamento da sua barbearia com IA no WhatsApp. Seus clientes agendam em segundos, sem app. Painel completo de gestão, financeiro e equipe.',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/og-image.svg', Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="CorteZap" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "CorteZap",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Sistema de agendamento inteligente pelo WhatsApp para barbearias, com bot de IA e painel de gestão completo.",
+          "url": "https://cortezap.app.br",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "lowPrice": "79.90",
+            "highPrice": "199.90",
+            "offerCount": 3
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "CorteZap",
+          "url": "https://cortezap.app.br",
+          "logo": "https://cortezap.app.br/favicon-32.png",
+          "description": "Agendamento inteligente pelo WhatsApp para barbearias."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Preciso de um número de WhatsApp separado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O bot realmente entende linguagem natural?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim! O CorteZap usa inteligência artificial para interpretar mensagens e entende datas relativas, nomes de serviço e preferências de horário."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona o período de teste?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Você testa o plano escolhido por 7 dias sem compromisso. Não pedimos cartão de crédito."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso cancelar a qualquer momento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, sem multa e sem burocracia."
+              }
+            }
+          ]
+        }
+      ]
+    })} />
+  </head>
+  <body class="overflow-x-hidden">
+    <slot />
+
+    <!-- IntersectionObserver fallback for scroll animations -->
+    <script>
+      if (!CSS.supports('animation-timeline', 'view()')) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+      }
+    </script>
+
+    <!-- Smooth scroll for anchor links -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+          if (!href) return;
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

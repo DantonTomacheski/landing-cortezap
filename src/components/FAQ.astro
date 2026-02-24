@@ -1,0 +1,68 @@
+---
+const faqs = [
+  {
+    question: 'Preciso de um número de WhatsApp separado?',
+    answer: 'Sim, o bot funciona com um número dedicado para a barbearia. Pode ser um chip novo — recomendamos um número fixo para transmitir profissionalismo. O pareamento é feito por QR code em poucos minutos.',
+  },
+  {
+    question: 'O bot realmente entende linguagem natural?',
+    answer: 'Sim! O CorteZap usa inteligência artificial para interpretar mensagens como "quero cortar cabelo amanhã de manhã" e entende datas relativas, nomes de serviço e preferências de horário. Para casos ambíguos, o bot faz perguntas de esclarecimento.',
+  },
+  {
+    question: 'E se o cliente quiser falar com uma pessoa?',
+    answer: 'Quando o bot não consegue resolver algo, ele pode direcionar a conversa para o administrador. Você recebe uma notificação no painel e pode intervir a qualquer momento.',
+  },
+  {
+    question: 'Funciona com mais de um barbeiro?',
+    answer: 'Sim! Todos os planos suportam múltiplos profissionais. Cada barbeiro tem seus próprios horários, serviços e agenda. O bot sabe quem está disponível e distribui os agendamentos.',
+  },
+  {
+    question: 'Como funciona o período de teste?',
+    answer: 'Você testa o plano escolhido por 7 dias sem compromisso. Não pedimos cartão de crédito. Se gostar, ativamos a assinatura. Se não, sem problemas.',
+  },
+  {
+    question: 'Posso personalizar as mensagens do bot?',
+    answer: 'Sim, o nome da barbearia, mensagens de boas-vindas e confirmação são personalizáveis. No plano Profissional em diante, você também customiza logo e cores do painel.',
+  },
+  {
+    question: 'E se eu já tiver um sistema de agendamento?',
+    answer: 'O CorteZap é uma solução completa. Migrar é simples — importamos sua base de clientes e configuramos tudo. A vantagem é que o bot WhatsApp é integrado nativamente, diferente de concorrentes que dependem de apps separados.',
+  },
+  {
+    question: 'Posso cancelar a qualquer momento?',
+    answer: 'Sim, sem multa e sem burocracia. Nos planos semestrais e anuais, o valor é proporcional ao período já utilizado.',
+  },
+];
+---
+
+<section id="faq" class="py-20 sm:py-28">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+    <div class="animate-on-scroll text-center">
+      <h2 class="text-3xl font-bold sm:text-4xl">Perguntas frequentes</h2>
+      <p class="mt-4 text-lg text-text-secondary">
+        Tudo que você precisa saber sobre o CorteZap.
+      </p>
+    </div>
+
+    <div class="mt-12 space-y-3">
+      {faqs.map((faq) => (
+        <details class="group rounded-xl border border-border bg-bg-card">
+          <summary class="flex cursor-pointer items-center justify-between px-6 py-4 text-sm font-medium transition-colors hover:text-brand-400 [&::-webkit-details-marker]:hidden list-none">
+            {faq.question}
+            <svg
+              class="h-5 w-5 shrink-0 text-text-muted transition-transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="px-6 pb-4 text-sm leading-relaxed text-text-secondary">
+            {faq.answer}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

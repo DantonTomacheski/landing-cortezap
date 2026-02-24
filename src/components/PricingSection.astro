@@ -1,0 +1,170 @@
+---
+import PricingCard from './PricingCard.astro';
+
+const waBase = 'https://wa.me/5511999999999?text=';
+
+const plans = [
+  {
+    name: 'Básico',
+    price: 'R$ 79,90',
+    priceNote: '/mês',
+    cta: 'Comece grátis',
+    ctaHref: `${waBase}${encodeURIComponent('Olá! Quero testar o CorteZap no plano Básico')}`,
+    features: [
+      { text: 'Até 2 profissionais', included: true },
+      { text: '1 usuário no painel', included: true },
+      { text: '1 unidade', included: true },
+      { text: 'Bot WhatsApp com IA (1 número)', included: true },
+      { text: 'Agendamento automático', included: true },
+      { text: 'Painel de gestão', included: true },
+      { text: 'Relatórios financeiros básicos', included: true },
+      { text: 'Base de clientes', included: true },
+      { text: 'Notificações em tempo real', included: true },
+      { text: 'Branding personalizado', included: false },
+      { text: 'Suporte WhatsApp', included: true },
+    ],
+  },
+  {
+    name: 'Profissional',
+    price: 'R$ 119,90',
+    priceNote: '/mês',
+    badge: 'Mais popular',
+    highlighted: true,
+    cta: 'Comece grátis',
+    ctaHref: `${waBase}${encodeURIComponent('Olá! Quero testar o CorteZap no plano Profissional')}`,
+    features: [
+      { text: 'Até 8 profissionais', included: true },
+      { text: '3 usuários no painel', included: true },
+      { text: '1 unidade', included: true },
+      { text: 'Bot WhatsApp com IA (1 número)', included: true },
+      { text: 'Agendamento automático', included: true },
+      { text: 'Painel de gestão', included: true },
+      { text: 'Relatórios financeiros completos', included: true },
+      { text: 'Base de clientes', included: true },
+      { text: 'Notificações em tempo real', included: true },
+      { text: 'Branding personalizado (logo + cor)', included: true },
+      { text: 'Suporte WhatsApp prioritário', included: true },
+    ],
+  },
+  {
+    name: 'Empresarial',
+    price: 'R$ 199,90',
+    priceNote: '/mês',
+    cta: 'Comece grátis',
+    ctaHref: `${waBase}${encodeURIComponent('Olá! Quero testar o CorteZap no plano Empresarial')}`,
+    features: [
+      { text: 'Profissionais ilimitados', included: true },
+      { text: 'Usuários ilimitados no painel', included: true },
+      { text: 'Unidades ilimitadas', included: true },
+      { text: 'Bot WhatsApp com IA (múltiplos números)', included: true },
+      { text: 'Agendamento automático', included: true },
+      { text: 'Painel de gestão', included: true },
+      { text: 'Relatórios completos + IA insights', included: true },
+      { text: 'Base de clientes', included: true },
+      { text: 'Notificações em tempo real', included: true },
+      { text: 'Branding + domínio próprio', included: true },
+      { text: 'Suporte dedicado', included: true },
+    ],
+  },
+];
+---
+
+<section id="planos" class="py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="animate-on-scroll text-center">
+      <h2 class="text-3xl font-bold sm:text-4xl">
+        Planos que cabem no seu bolso
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-text-secondary">
+        Todos os planos incluem o bot WhatsApp com IA. Teste grátis por 7 dias.
+      </p>
+    </div>
+
+    <!-- Billing toggle -->
+    <div class="mt-8 flex items-center justify-center gap-3">
+      <button
+        data-billing="mensal"
+        class="billing-toggle rounded-lg px-4 py-2 text-sm font-medium transition-colors bg-brand-500/10 text-brand-400"
+      >
+        Mensal
+      </button>
+      <button
+        data-billing="semestral"
+        class="billing-toggle rounded-lg px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-text-primary"
+      >
+        Semestral <span class="text-xs text-brand-400">-10%</span>
+      </button>
+      <button
+        data-billing="anual"
+        class="billing-toggle rounded-lg px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-text-primary"
+      >
+        Anual <span class="text-xs text-brand-400">-20%</span>
+      </button>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      {plans.map((plan) => (
+        <PricingCard
+          name={plan.name}
+          price={plan.price}
+          priceNote={plan.priceNote}
+          badge={plan.badge}
+          features={plan.features}
+          cta={plan.cta}
+          ctaHref={plan.ctaHref}
+          highlighted={plan.highlighted}
+        />
+      ))}
+    </div>
+
+    <!-- Custom plan -->
+    <div class="animate-on-scroll mt-8 rounded-2xl border border-border bg-bg-card p-6 text-center sm:p-8">
+      <h3 class="text-lg font-semibold">Precisa de algo personalizado?</h3>
+      <p class="mt-2 text-sm text-text-secondary">
+        Para redes com múltiplas unidades ou necessidades específicas, montamos um plano sob medida.
+      </p>
+      <a
+        href={`${waBase}${encodeURIComponent('Olá! Quero saber mais sobre o plano personalizado do CorteZap')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-4 inline-flex items-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-semibold transition-all hover:border-brand-500/30 hover:text-brand-400"
+      >
+        Fale conosco
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const prices: Record<string, Record<string, string>> = {
+    mensal: { 'Básico': 'R$ 79,90', 'Profissional': 'R$ 119,90', 'Empresarial': 'R$ 199,90' },
+    semestral: { 'Básico': 'R$ 71,91', 'Profissional': 'R$ 107,91', 'Empresarial': 'R$ 179,91' },
+    anual: { 'Básico': 'R$ 63,92', 'Profissional': 'R$ 95,92', 'Empresarial': 'R$ 159,92' },
+  };
+
+  const buttons = document.querySelectorAll('.billing-toggle');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const billing = (btn as HTMLElement).dataset.billing!;
+
+      // Update active toggle
+      buttons.forEach((b) => {
+        b.classList.remove('bg-brand-500/10', 'text-brand-400');
+        b.classList.add('text-text-secondary');
+      });
+      btn.classList.add('bg-brand-500/10', 'text-brand-400');
+      btn.classList.remove('text-text-secondary');
+
+      // Update prices
+      const cards = document.querySelectorAll('[data-plan-name]');
+      // Alternative: find by heading text
+      document.querySelectorAll('#planos h3').forEach((h3) => {
+        const name = h3.textContent?.trim() || '';
+        if (prices[billing]?.[name]) {
+          const priceEl = h3.closest('[class*="rounded-2xl"]')?.querySelector('[data-price]') as HTMLElement | null;
+          if (priceEl) priceEl.textContent = prices[billing][name];
+        }
+      });
+    });
+  });
+</script>
