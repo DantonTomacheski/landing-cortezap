@@ -20,6 +20,7 @@ export interface BreadcrumbItem {
 }
 
 export const CORE_KEYWORDS = [
+  // Termos de marca e sistema
   "agendamento whatsapp barbearia",
   "sistema para barbearia",
   "painel para barbeiro",
@@ -30,6 +31,22 @@ export const CORE_KEYWORDS = [
   "controle de agendamentos barbearia",
   "financeiro para barbearia",
   "crm para barbearia",
+  // Gaps identificados nos concorrentes (EiBarber, Trinks, AppBarber, BarberBot, Gendo)
+  "aplicativo para barbearia",
+  "agendamento online barbearia",
+  "lembrete automatico barbearia",
+  "lembrete whatsapp barbearia",
+  "confirmacao automatica barbearia",
+  "reduzir no-show barbearia",
+  "controle de comissao barbeiro",
+  "fidelizar clientes barbearia",
+  "notificacao whatsapp barbearia",
+  "agenda digital barbearia",
+  "relatorio para barbearia",
+  "automatizar agendamento barbearia",
+  "agendamento 24h barbearia",
+  "app para barbearia",
+  "programa de agendamento barbearia",
 ];
 
 export const HOME_FAQ_ENTRIES: FaqEntry[] = [
@@ -77,6 +94,21 @@ export const HOME_FAQ_ENTRIES: FaqEntry[] = [
     question: "Posso cancelar quando quiser?",
     answer:
       "Sim. Você pode cancelar sem burocracia, de acordo com as regras do seu plano.",
+  },
+  {
+    question: "O sistema envia lembrete automático para reduzir no-show?",
+    answer:
+      "Sim. O CorteZap envia lembretes automáticos via WhatsApp antes do horário agendado, ajudando a reduzir faltas e cancelamentos de última hora.",
+  },
+  {
+    question: "O agendamento funciona 24 horas por dia?",
+    answer:
+      "Sim. O bot atende e agenda horários 24h por dia, 7 dias por semana — inclusive fora do horário comercial.",
+  },
+  {
+    question: "O sistema faz controle de comissão dos barbeiros?",
+    answer:
+      "Sim. O painel acompanha a produtividade de cada profissional com dados de faturamento e serviços realizados, facilitando o cálculo de comissões sem planilha.",
   },
 ];
 
