@@ -1,16 +1,51 @@
 ---
+import "../styles/global.css";
+import {
+  CORE_KEYWORDS,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  ORGANIZATION_SCHEMA,
+  SITE_NAME,
+  SITE_URL,
+  SOFTWARE_APPLICATION_SCHEMA,
+  WEBSITE_SCHEMA,
+} from "../data/seo";
+
 interface Props {
   title?: string;
   description?: string;
+  keywords?: string[];
+  canonicalPath?: string;
+  ogImagePath?: string;
+  structuredData?: Record<string, unknown>[];
+  noindex?: boolean;
 }
 
 const {
-  title = 'CorteZap — Agendamento inteligente pelo WhatsApp para barbearias',
-  description = 'Automatize o agendamento da sua barbearia com IA no WhatsApp. Seus clientes agendam em segundos, sem app. Painel completo de gestão, financeiro e equipe.',
+  title = DEFAULT_TITLE,
+  description = DEFAULT_DESCRIPTION,
+  keywords = CORE_KEYWORDS,
+  canonicalPath = Astro.url.pathname,
+  ogImagePath = "/og-image.svg",
+  structuredData = [],
+  noindex = false,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/og-image.svg', Astro.site);
+const siteOrigin = Astro.site ? Astro.site.toString() : SITE_URL;
+const normalizedPath = canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`;
+const canonicalURL = new URL(normalizedPath, siteOrigin);
+const ogImage = new URL(ogImagePath, siteOrigin);
+const homeURL = new URL("/", siteOrigin);
+const robotsContent = noindex
+  ? "noindex, nofollow"
+  : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1";
+
+const jsonLdGraph = [
+  ORGANIZATION_SCHEMA,
+  WEBSITE_SCHEMA,
+  SOFTWARE_APPLICATION_SCHEMA,
+  ...structuredData,
+];
 ---
 
 <!DOCTYPE html>
@@ -19,10 +54,16 @@ const ogImage = new URL('/og-image.svg', Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#111827" />
+    <meta name="robots" content={robotsContent} />
+    <meta name="author" content={SITE_NAME} />
+    <meta name="language" content="pt-BR" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords.join(", ")} />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="pt-BR" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={homeURL} />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
@@ -34,14 +75,16 @@ const ogImage = new URL('/og-image.svg', Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content="CorteZap - agendamento via WhatsApp e painel para barbeiro" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="CorteZap" />
+    <meta property="og:site_name" content={SITE_NAME} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="CorteZap - agendamento via WhatsApp e painel para barbeiro" />
 
     <!-- Preconnect Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,67 +93,7 @@ const ogImage = new URL('/og-image.svg', Astro.site);
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "SoftwareApplication",
-          "name": "CorteZap",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "Sistema de agendamento inteligente pelo WhatsApp para barbearias, com bot de IA e painel de gestão completo.",
-          "url": "https://cortezap.app.br",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "BRL",
-            "lowPrice": "79.90",
-            "highPrice": "199.90",
-            "offerCount": 3
-          }
-        },
-        {
-          "@type": "Organization",
-          "name": "CorteZap",
-          "url": "https://cortezap.app.br",
-          "logo": "https://cortezap.app.br/favicon-32.png",
-          "description": "Agendamento inteligente pelo WhatsApp para barbearias."
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Preciso de um número de WhatsApp separado?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O bot realmente entende linguagem natural?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim! O CorteZap usa inteligência artificial para interpretar mensagens e entende datas relativas, nomes de serviço e preferências de horário."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como funciona o período de teste?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Você testa o plano escolhido por 7 dias sem compromisso. Não pedimos cartão de crédito."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Posso cancelar a qualquer momento?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, sem multa e sem burocracia."
-              }
-            }
-          ]
-        }
-      ]
+      "@graph": jsonLdGraph
     })} />
   </head>
   <body class="overflow-x-hidden">

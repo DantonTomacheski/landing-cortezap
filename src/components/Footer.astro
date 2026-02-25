@@ -2,11 +2,15 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 
+const isHome = Astro.url.pathname === '/';
+const anchorPrefix = isHome ? '' : '/';
+
 const links = [
-  { label: 'Funcionalidades', href: '#funcionalidades' },
-  { label: 'Como funciona', href: '#como-funciona' },
-  { label: 'Planos', href: '#planos' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Agendamento WhatsApp', href: '/agendamento-whatsapp-barbearia' },
+  { label: 'Painel para barbeiro', href: '/painel-para-barbeiro' },
+  { label: 'Sistema para barbearia', href: '/sistema-para-barbearia' },
+  { label: 'Planos', href: `${anchorPrefix}#planos` },
+  { label: 'FAQ', href: `${anchorPrefix}#faq` },
 ];
 ---
 
@@ -16,7 +20,7 @@ const links = [
       <div class="flex flex-col items-center gap-4 md:items-start">
         <Image src={logo} alt="CorteZap" width={861} height={209} class="h-8 sm:h-10 w-auto opacity-90" />
         <p class="text-sm text-text-muted font-light max-w-xs text-center md:text-left">
-          Inteligência Artificial e gestão completa para transformar sua barbearia.
+          Sistema para barbearia com agendamento no WhatsApp e painel para barbeiro.
         </p>
       </div>
 
@@ -37,8 +41,8 @@ const links = [
         &copy; {new Date().getFullYear()} CorteZap. Todos os direitos reservados.
       </p>
       <div class="flex items-center gap-6">
-        <a href="#" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Termos de Uso</a>
-        <a href="#" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Privacidade</a>
+        <a href="/termos-de-uso" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Termos de Uso</a>
+        <a href="/politica-de-privacidade" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Privacidade</a>
       </div>
     </div>
   </div>

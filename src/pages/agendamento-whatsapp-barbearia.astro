@@ -1,0 +1,163 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import {
+  CORE_KEYWORDS,
+  createBreadcrumbSchema,
+  createFaqSchema,
+  createWhatsAppLink,
+} from "../data/seo";
+
+const whatsappLink = createWhatsAppLink("Olá! Quero ativar o agendamento WhatsApp na minha barbearia");
+
+const faqEntries = [
+  {
+    question: "O cliente precisa instalar aplicativo para agendar?",
+    answer:
+      "Não. O cliente agenda no WhatsApp da barbearia, no mesmo chat que já usa no dia a dia.",
+  },
+  {
+    question: "O bot consegue reagendar e cancelar também?",
+    answer:
+      "Sim. O fluxo contempla agendar, reagendar e cancelar, sempre respeitando disponibilidade da agenda.",
+  },
+  {
+    question: "Como eu acompanho o que foi agendado?",
+    answer:
+      "Tudo entra automaticamente no painel para barbeiro e administrador, com atualização em tempo real.",
+  },
+  {
+    question: "Posso ter mais de um profissional na agenda?",
+    answer:
+      "Sim. O sistema distribui os horários por profissional e considera regras de disponibilidade de cada barbeiro.",
+  },
+];
+
+const breadcrumbs = [
+  { name: "Início", path: "/" },
+  { name: "Agendamento WhatsApp para Barbearia", path: "/agendamento-whatsapp-barbearia" },
+];
+
+const structuredData = [
+  createBreadcrumbSchema(breadcrumbs),
+  createFaqSchema(faqEntries),
+  {
+    "@type": "HowTo",
+    "name": "Como ativar agendamento por WhatsApp na barbearia",
+    "step": [
+      { "@type": "HowToStep", "name": "Pareie o número do WhatsApp", "text": "Conecte o WhatsApp da barbearia via QR code." },
+      { "@type": "HowToStep", "name": "Configure serviços e horários", "text": "Defina catálogo de serviços e disponibilidade dos profissionais." },
+      { "@type": "HowToStep", "name": "Receba agendamentos automáticos", "text": "Clientes agendam pelo chat e os dados entram no painel em tempo real." },
+    ],
+  },
+];
+
+const keywords = [
+  ...CORE_KEYWORDS,
+  "agendamento whatsapp para barbearia",
+  "marcar horario barbearia whatsapp",
+  "bot de agendamento barbearia",
+];
+---
+
+<BaseLayout
+  title="Agendamento WhatsApp para Barbearia | CorteZap"
+  description="Ative o agendamento da sua barbearia pelo WhatsApp com confirmação automática, reagendamento e painel em tempo real para a equipe."
+  keywords={keywords}
+  canonicalPath="/agendamento-whatsapp-barbearia"
+  structuredData={structuredData}
+>
+  <Navbar />
+  <main>
+    <section class="relative py-28 sm:py-36">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-widest text-brand-400">Página estratégica</p>
+        <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-6xl">
+          Agendamento WhatsApp para barbearia com operação real de ponta a ponta
+        </h1>
+        <p class="mt-6 text-lg leading-relaxed text-text-secondary">
+          O cliente chama no WhatsApp, escolhe serviço, confirma horário e recebe retorno automático.
+          Sua equipe acompanha tudo no painel para barbeiro, sem planilha, sem papel e sem retrabalho.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center rounded-xl bg-brand-500 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-400"
+          >
+            Ativar pelo WhatsApp
+          </a>
+          <a href="/painel-para-barbeiro" class="inline-flex items-center rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:border-brand-500/40 hover:text-brand-300">
+            Ver painel para barbeiro
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative pb-20">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
+        <article class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+          <h2 class="text-xl font-bold text-white">Atendimento 24h</h2>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">
+            O bot responde fora do horário comercial e mantém sua agenda capturando demanda enquanto você corta cabelo.
+          </p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+          <h2 class="text-xl font-bold text-white">Menos faltas e ruído</h2>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">
+            Confirmação no chat, lembretes automáticos e histórico de mensagens reduzem no-show e perda de contexto.
+          </p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+          <h2 class="text-xl font-bold text-white">Agenda sempre sincronizada</h2>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">
+            Cada agendamento cai no painel em tempo real com atualização imediata para equipe e administração.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+          Fluxo de agendamento WhatsApp que funciona no dia a dia da barbearia
+        </h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+            <h3 class="text-xl font-bold text-white">O que o cliente faz</h3>
+            <ul class="mt-4 space-y-3 text-sm text-text-secondary">
+              <li>Envia mensagem natural como “quero cortar amanhã às 10h”.</li>
+              <li>Escolhe entre horários disponíveis já validados na agenda.</li>
+              <li>Recebe confirmação com serviço, horário e profissional.</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+            <h3 class="text-xl font-bold text-white">O que sua equipe ganha</h3>
+            <ul class="mt-4 space-y-3 text-sm text-text-secondary">
+              <li>Agenda organizada sem depender de resposta manual em toda conversa.</li>
+              <li>Atualizações em tempo real no painel para barbeiro e admin.</li>
+              <li>Mais foco no atendimento presencial e menos operação repetitiva.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">Perguntas frequentes sobre agendamento WhatsApp</h2>
+        <div class="mt-8 space-y-4">
+          {faqEntries.map((faq) => (
+            <details class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+              <summary class="cursor-pointer text-base font-semibold text-white">{faq.question}</summary>
+              <p class="mt-3 text-sm leading-relaxed text-text-secondary">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

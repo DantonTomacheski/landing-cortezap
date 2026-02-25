@@ -1,0 +1,57 @@
+---
+const pillars = [
+  {
+    title: "Agendamento WhatsApp para barbearia",
+    description:
+      "Cliente fala com o bot no WhatsApp, escolhe serviço, horário e confirma sem sair da conversa. O fluxo cobre agendar, reagendar e cancelar.",
+    href: "/agendamento-whatsapp-barbearia",
+    cta: "Ver página completa",
+  },
+  {
+    title: "Painel para barbeiro e dono",
+    description:
+      "Agenda, clientes, serviços, horários, notificações e financeiro em um único painel. Perfis de acesso separados para administrador e barbeiro.",
+    href: "/painel-para-barbeiro",
+    cta: "Entender o painel",
+  },
+  {
+    title: "Sistema para barbearia em escala",
+    description:
+      "Operação para uma ou múltiplas unidades com gestão de equipe, histórico de mensagens, insights e acompanhamento de resultados em tempo real.",
+    href: "/sistema-para-barbearia",
+    cta: "Explorar sistema",
+  },
+];
+---
+
+<section id="seo-intencao" class="relative py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="animate-on-scroll text-center">
+      <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
+        Termos que importam
+      </div>
+      <h2 class="text-4xl font-black tracking-tight sm:text-5xl text-white">
+        Sistema para barbearia com <span class="text-brand-500">WhatsApp + painel para barbeiro</span>
+      </h2>
+      <p class="mx-auto mt-6 max-w-3xl text-lg text-text-secondary font-light leading-relaxed">
+        O CorteZap une atendimento automático no WhatsApp com painel operacional completo para a barbearia.
+        Isso cobre as buscas mais competitivas do mercado em uma única solução real.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      {pillars.map((item) => (
+        <article class="animate-on-scroll rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:bg-white/[0.04]">
+          <h3 class="text-2xl font-bold text-white tracking-tight">{item.title}</h3>
+          <p class="mt-4 text-[15px] text-text-secondary leading-relaxed">{item.description}</p>
+          <a href={item.href} class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300">
+            {item.cta}
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { createBreadcrumbSchema } from "../data/seo";
+
+const structuredData = [
+  createBreadcrumbSchema([
+    { name: "Início", path: "/" },
+    { name: "Política de Privacidade", path: "/politica-de-privacidade" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="Política de Privacidade | CorteZap"
+  description="Política de privacidade da CorteZap com informações sobre coleta, uso e proteção de dados na plataforma."
+  canonicalPath="/politica-de-privacidade"
+  structuredData={structuredData}
+>
+  <Navbar />
+  <main>
+    <section class="py-28">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-black tracking-tight text-white sm:text-5xl">Política de Privacidade</h1>
+        <p class="mt-4 text-sm text-text-muted">Última atualização: 25 de fevereiro de 2026.</p>
+
+        <div class="mt-10 space-y-8 text-sm leading-relaxed text-text-secondary">
+          <section>
+            <h2 class="text-xl font-bold text-white">1. Dados coletados</h2>
+            <p class="mt-3">
+              A plataforma pode tratar dados cadastrais e operacionais necessários para funcionamento do agendamento,
+              como nome, telefone, histórico de atendimentos e informações de uso do painel.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white">2. Finalidade do tratamento</h2>
+            <p class="mt-3">
+              Os dados são utilizados para executar serviços contratados, manter segurança da conta, oferecer suporte
+              e melhorar a experiência de gestão da barbearia.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white">3. Compartilhamento</h2>
+            <p class="mt-3">
+              O compartilhamento ocorre apenas quando necessário para prestação do serviço, cumprimento legal
+              ou mediante solicitação legítima da autoridade competente.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white">4. Segurança</h2>
+            <p class="mt-3">
+              A CorteZap aplica medidas técnicas e administrativas para proteção dos dados, com controle de acesso,
+              autenticação e monitoramento contínuo da plataforma.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white">5. Direitos do titular</h2>
+            <p class="mt-3">
+              O titular pode solicitar atualização, correção ou exclusão de dados, respeitando obrigações legais
+              e prazos de retenção aplicáveis.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white">6. Contato</h2>
+            <p class="mt-3">
+              Para solicitações relacionadas à privacidade, utilize o canal oficial de atendimento da CorteZap.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

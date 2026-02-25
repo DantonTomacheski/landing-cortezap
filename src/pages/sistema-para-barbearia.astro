@@ -1,0 +1,174 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import {
+  CORE_KEYWORDS,
+  createBreadcrumbSchema,
+  createFaqSchema,
+  createWhatsAppLink,
+} from "../data/seo";
+
+const whatsappLink = createWhatsAppLink("Olá! Quero ver o sistema completo para barbearia");
+
+const faqEntries = [
+  {
+    question: "O sistema cobre WhatsApp e painel no mesmo produto?",
+    answer:
+      "Sim. O cliente agenda no WhatsApp e toda a operação é centralizada no painel da barbearia.",
+  },
+  {
+    question: "Serve para barbearia pequena e para rede com mais de uma unidade?",
+    answer:
+      "Sim. Há planos para operação enxuta e também para cenários com múltiplos profissionais e unidades.",
+  },
+  {
+    question: "Consigo migrar sem parar a operação?",
+    answer:
+      "Sim. O setup pode ser feito de forma progressiva para manter atendimento e agenda rodando normalmente.",
+  },
+  {
+    question: "O sistema ajuda a vender mais horários?",
+    answer:
+      "Sim. Com atendimento automático no WhatsApp, notificações e agenda organizada, você reduz perda de oportunidades.",
+  },
+];
+
+const breadcrumbs = [
+  { name: "Início", path: "/" },
+  { name: "Sistema para Barbearia", path: "/sistema-para-barbearia" },
+];
+
+const structuredData = [
+  createBreadcrumbSchema(breadcrumbs),
+  createFaqSchema(faqEntries),
+  {
+    "@type": "ItemList",
+    "name": "Pilares do sistema para barbearia",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Atendimento automático no WhatsApp" },
+      { "@type": "ListItem", "position": 2, "name": "Painel de gestão para barbeiro e administrador" },
+      { "@type": "ListItem", "position": 3, "name": "Financeiro, clientes e equipe em tempo real" },
+    ],
+  },
+];
+
+const keywords = [
+  ...CORE_KEYWORDS,
+  "sistema de gestao para barbearia",
+  "software para barbearia com whatsapp",
+  "programa para barbearia",
+];
+---
+
+<BaseLayout
+  title="Sistema para Barbearia com WhatsApp e Painel | CorteZap"
+  description="Conheça o sistema para barbearia do CorteZap: atendimento automático no WhatsApp, painel para barbeiro, clientes, financeiro e equipe."
+  keywords={keywords}
+  canonicalPath="/sistema-para-barbearia"
+  structuredData={structuredData}
+>
+  <Navbar />
+  <main>
+    <section class="relative py-28 sm:py-36">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-widest text-brand-400">Página estratégica</p>
+        <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-6xl">
+          Sistema para barbearia que integra WhatsApp, agenda e gestão
+        </h1>
+        <p class="mt-6 text-lg leading-relaxed text-text-secondary">
+          O CorteZap foi construído para substituir operação manual por um fluxo único:
+          captação no WhatsApp, gestão em painel e visão de resultados em tempo real.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center rounded-xl bg-brand-500 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-400"
+          >
+            Testar sistema agora
+          </a>
+          <a href="/agendamento-whatsapp-barbearia" class="inline-flex items-center rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:border-brand-500/40 hover:text-brand-300">
+            Ver agendamento WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative pb-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">
+          O que um sistema para barbearia precisa entregar
+        </h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+            <h3 class="text-2xl font-bold text-white">Aquisição e agenda</h3>
+            <ul class="mt-4 space-y-3 text-sm text-text-secondary">
+              <li>Atendimento automático no WhatsApp 24h.</li>
+              <li>Confirmação de agendamento em linguagem natural.</li>
+              <li>Controle de disponibilidade por profissional.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+            <h3 class="text-2xl font-bold text-white">Operação e crescimento</h3>
+            <ul class="mt-4 space-y-3 text-sm text-text-secondary">
+              <li>Painel para barbeiro e administrador com papéis distintos.</li>
+              <li>Financeiro com indicadores de performance da barbearia.</li>
+              <li>Base de clientes com histórico para retenção e recorrência.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">CorteZap na prática da barbearia</h2>
+        <div class="mt-8 overflow-hidden rounded-2xl border border-white/10">
+          <table class="w-full border-collapse text-left text-sm">
+            <thead class="bg-white/[0.04]">
+              <tr>
+                <th class="px-4 py-3 font-semibold text-white">Processo</th>
+                <th class="px-4 py-3 font-semibold text-white">Sem sistema</th>
+                <th class="px-4 py-3 font-semibold text-white">Com CorteZap</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-white/10">
+                <td class="px-4 py-3 text-white">Entrada de pedidos</td>
+                <td class="px-4 py-3 text-text-secondary">Manual e disperso</td>
+                <td class="px-4 py-3 text-text-secondary">Automático via WhatsApp</td>
+              </tr>
+              <tr class="border-t border-white/10">
+                <td class="px-4 py-3 text-white">Controle da agenda</td>
+                <td class="px-4 py-3 text-text-secondary">Sujeito a conflitos</td>
+                <td class="px-4 py-3 text-text-secondary">Sincronizado em tempo real</td>
+              </tr>
+              <tr class="border-t border-white/10">
+                <td class="px-4 py-3 text-white">Decisão financeira</td>
+                <td class="px-4 py-3 text-text-secondary">Sem visão consolidada</td>
+                <td class="px-4 py-3 text-text-secondary">Métricas prontas no painel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">FAQ do sistema para barbearia</h2>
+        <div class="mt-8 space-y-4">
+          {faqEntries.map((faq) => (
+            <details class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+              <summary class="cursor-pointer text-base font-semibold text-white">{faq.question}</summary>
+              <p class="mt-3 text-sm leading-relaxed text-text-secondary">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,5 +1,4 @@
 ---
-import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import HeroSection from '../components/HeroSection.astro';
@@ -11,15 +10,49 @@ import PricingSection from '../components/PricingSection.astro';
 import FAQ from '../components/FAQ.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Footer from '../components/Footer.astro';
+import SeoIntentSection from '../components/SeoIntentSection.astro';
+import ProductRealitySection from '../components/ProductRealitySection.astro';
+import { CORE_KEYWORDS, HOME_FAQ_ENTRIES, createFaqSchema } from '../data/seo';
+
+const title = 'CorteZap | Agendamento WhatsApp para Barbearia + Painel para Barbeiro';
+const description =
+  'Aumente os agendamentos da sua barbearia com bot no WhatsApp e painel completo para barbeiro e administrador. Agenda, financeiro, clientes, equipe e insights.';
+const keywords = [
+  ...CORE_KEYWORDS,
+  'software para agendamento barbearia',
+  'painel de gestao para barbearia',
+  'whatsapp para barbeiro',
+];
+const structuredData = [
+  createFaqSchema(HOME_FAQ_ENTRIES),
+  {
+    "@type": "Service",
+    "name": "Agendamento para barbearia via WhatsApp",
+    "provider": {
+      "@type": "Organization",
+      "name": "CorteZap",
+    },
+    "serviceType": "Software de gestão para barbearia",
+    "areaServed": "BR",
+  },
+];
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonicalPath="/"
+  structuredData={structuredData}
+>
   <Navbar />
   <main>
     <HeroSection />
     <SocialProof />
+    <SeoIntentSection />
     <FeaturesGrid />
     <HowItWorks />
+    <ProductRealitySection />
     <DashboardPreview />
     <PricingSection />
     <FAQ />
