@@ -87,8 +87,7 @@ export const HOME_FAQ_ENTRIES: FaqEntry[] = [
   },
   {
     question: "Como funciona o período de teste?",
-    answer:
-      "Você testa por 7 dias sem compromisso e sem cartão de crédito.",
+    answer: "Você testa por 7 dias sem compromisso e sem cartão de crédito.",
   },
   {
     question: "Posso cancelar quando quiser?",
@@ -150,9 +149,20 @@ export const ORGANIZATION_SCHEMA = {
   "@type": "Organization",
   name: SITE_NAME,
   url: SITE_URL,
-  logo: toAbsoluteUrl("/apple-touch-icon.png"),
+  logo: {
+    "@type": "ImageObject",
+    url: toAbsoluteUrl("/apple-touch-icon.png"),
+    width: 180,
+    height: 180,
+  },
   description:
-    "Plataforma de agendamento inteligente pelo WhatsApp com painel de gestão para barbearias.",
+    "Plataforma de agendamento inteligente pelo WhatsApp com painel de gestão para barbearias. Bot com IA, agenda online, financeiro e equipe.",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    availableLanguage: "Portuguese",
+    url: `https://wa.me/${WHATSAPP_NUMBER}`,
+  },
 };
 
 export const WEBSITE_SCHEMA = {
@@ -166,11 +176,25 @@ export const SOFTWARE_APPLICATION_SCHEMA = {
   "@type": "SoftwareApplication",
   name: SITE_NAME,
   applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
+  operatingSystem: "Web, Android, iOS",
   inLanguage: "pt-BR",
   description:
-    "Sistema para barbearia com bot de WhatsApp, painel para barbeiro, agenda, clientes, financeiro e gestão de equipe.",
+    "Sistema para barbearia com bot de WhatsApp com IA, painel para barbeiro e administrador, agenda online, base de clientes, relatórios financeiros, notificações web push e gestão de equipe.",
   url: SITE_URL,
+  featureList: [
+    "Bot WhatsApp com inteligência artificial",
+    "Agendamento automático 24 horas por dia",
+    "Painel para barbeiro e administrador",
+    "Agenda por profissional com disponibilidade",
+    "Lembretes automáticos via WhatsApp",
+    "Relatórios financeiros com exportação PDF",
+    "Base de clientes com histórico",
+    "Notificações web push em tempo real",
+    "Múltiplas instâncias WhatsApp por profissional",
+    "Branding personalizado com logo e cor",
+    "Perfis de acesso admin e barbeiro",
+    "Reagendamento e cancelamento automático",
+  ],
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "BRL",
