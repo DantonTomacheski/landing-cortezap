@@ -35,18 +35,23 @@ const features = [
 ];
 ---
 
-<section id="funcionalidades" class="py-20 sm:py-28">
+<section id="funcionalidades" class="relative py-24 sm:py-32">
+  <div class="absolute inset-0 bg-bg-card [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] -z-10"></div>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="animate-on-scroll text-center">
-      <h2 class="text-3xl font-bold sm:text-4xl">
-        Tudo que sua barbearia precisa
+    <div class="animate-on-scroll text-center flex flex-col items-center">
+      <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
+        Funcionalidades
+      </div>
+      <h2 class="mt-2 text-4xl font-black tracking-tight sm:text-5xl text-white">
+        Mais que um bot. <br class="sm:hidden" />
+        <span class="text-brand-500">Uma gestão completa.</span>
       </h2>
-      <p class="mx-auto mt-4 max-w-2xl text-lg text-text-secondary">
-        Do atendimento no WhatsApp ao relatório financeiro, em uma única plataforma.
+      <p class="mt-6 max-w-2xl text-lg text-text-secondary font-light">
+        Do atendimento no WhatsApp ao relatório financeiro. Tudo desenvolvido para barbearias de alto nível, em uma única plataforma moderna.
       </p>
     </div>
 
-    <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {features.map((feature) => (
         <FeatureCard
           title={feature.title}

@@ -16,7 +16,7 @@ const navLinks = [
 >
   <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
     <a href="/" class="flex items-center gap-2">
-      <Image src={logo} alt="CorteZap" width={140} height={40} class="h-8 w-auto" />
+      <Image src={logo} alt="CorteZap" width={240} height={70} class="h-12 sm:h-16 w-auto" />
     </a>
 
     <!-- Desktop links -->
@@ -24,25 +24,26 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-400"
+          class="text-[15px] font-medium text-text-secondary transition-colors hover:text-white"
         >
           {link.label}
         </a>
       ))}
       <a
-        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20testar%20o%20CorteZap"
+        href="https://wa.me/5542999689501?text=Ol%C3%A1!%20Quero%20testar%20o%20CorteZap"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-600"
+        class="relative overflow-hidden group rounded-xl bg-brand-500 px-6 py-2.5 text-[15px] font-bold text-white transition-all hover:scale-105 hover:bg-brand-400 shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
       >
-        Comece grátis
+        <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer"></div>
+        <span class="relative z-10">Comece grátis</span>
       </a>
     </div>
 
     <!-- Mobile menu button -->
     <button
       id="mobile-menu-btn"
-      class="flex items-center justify-center rounded-lg p-2 text-text-secondary transition-colors hover:text-text-primary md:hidden"
+      class="flex items-center justify-center rounded-lg p-2 text-text-secondary transition-colors hover:text-white md:hidden"
       aria-label="Abrir menu"
       aria-expanded="false"
     >
@@ -58,22 +59,22 @@ const navLinks = [
   <!-- Mobile menu -->
   <div
     id="mobile-menu"
-    class="hidden border-t border-border bg-bg-primary/95 backdrop-blur-lg md:hidden"
+    class="hidden border-t border-white/10 bg-[#050505]/95 backdrop-blur-xl md:hidden"
   >
     <div class="flex flex-col gap-1 px-4 py-4">
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="mobile-nav-link rounded-lg px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:bg-bg-card hover:text-text-primary"
+          class="mobile-nav-link rounded-lg px-4 py-3 text-[15px] font-medium text-text-secondary transition-colors hover:bg-white/5 hover:text-white"
         >
           {link.label}
         </a>
       ))}
       <a
-        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20testar%20o%20CorteZap"
+        href="https://wa.me/5542999689501?text=Ol%C3%A1!%20Quero%20testar%20o%20CorteZap"
         target="_blank"
         rel="noopener noreferrer"
-        class="mt-2 rounded-lg bg-brand-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-brand-600"
+        class="mt-4 rounded-xl bg-brand-500 px-5 py-3.5 text-center text-[15px] font-bold text-white transition-colors hover:bg-brand-400 shadow-[0_0_15px_rgba(249,115,22,0.3)]"
       >
         Comece grátis
       </a>
@@ -113,9 +114,9 @@ const navLinks = [
   window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
     if (currentScroll > 50) {
-      navbar.classList.add('bg-bg-primary/90', 'backdrop-blur-lg', 'shadow-lg', 'shadow-black/20');
+      navbar.classList.add('bg-[#050505]/80', 'backdrop-blur-xl', 'border-b', 'border-white/10');
     } else {
-      navbar.classList.remove('bg-bg-primary/90', 'backdrop-blur-lg', 'shadow-lg', 'shadow-black/20');
+      navbar.classList.remove('bg-[#050505]/80', 'backdrop-blur-xl', 'border-b', 'border-white/10');
     }
     lastScroll = currentScroll;
   }, { passive: true });

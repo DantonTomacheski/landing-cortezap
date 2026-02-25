@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -14,24 +14,28 @@
   --color-brand-900: #7c2d12;
   --color-brand-950: #431407;
 
-  --color-bg-primary: hsl(222 47% 8%);
-  --color-bg-card: hsl(222 47% 11%);
-  --color-bg-elevated: hsl(222 47% 14%);
-  --color-text-primary: hsl(210 40% 98%);
-  --color-text-secondary: hsl(215 20% 65%);
-  --color-text-muted: hsl(215 20% 45%);
-  --color-border: hsl(215 28% 17%);
-  --color-border-light: hsl(215 28% 22%);
+  /* Pitch Black Theme */
+  --color-bg-primary: #050505;
+  --color-bg-card: #0a0a0a;
+  --color-bg-elevated: #111111;
+
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  --color-border: #1f1f1f;
+  --color-border-light: #2a2a2a;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-bg-primary);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--color-text-primary);
-  background: hsl(222 47% 8%);
+  background: var(--color-bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
