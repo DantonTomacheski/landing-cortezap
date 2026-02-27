@@ -9,6 +9,16 @@ export const DEFAULT_DESCRIPTION =
 export const WHATSAPP_NUMBER = "5542999689501";
 export const WHATSAPP_BASE_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
+export const ABACATEPAY_LINK_BASICO =
+  "https://app.abacatepay.com/pay/bill_Fy31qcpNnDZmkLhQWLaXAcgR";
+export const ABACATEPAY_LINK_PROFISSIONAL =
+  "https://app.abacatepay.com/pay/bill_DbKXYHRzqAxyFYcMJP0EA6ya";
+export const ABACATEPAY_LINK_EMPRESARIAL =
+  "https://app.abacatepay.com/pay/bill_a3MaetaJETqYZmstKxD2MBzy";
+export const ABACATEPAY_LINK_DEFAULT = ABACATEPAY_LINK_PROFISSIONAL;
+
+export const PAINEL_URL = "https://painel.cortezap.app.br";
+
 export interface FaqEntry {
   question: string;
   answer: string;
@@ -50,41 +60,7 @@ export const CORE_KEYWORDS = [
 ];
 
 export const HOME_FAQ_ENTRIES: FaqEntry[] = [
-  {
-    question: "Preciso de um número de WhatsApp separado?",
-    answer:
-      "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos.",
-  },
-  {
-    question: "O bot realmente entende linguagem natural?",
-    answer:
-      'Sim. O CorteZap interpreta mensagens como "quero cortar amanhã de manhã", entende datas relativas e confirma o melhor horário disponível.',
-  },
-  {
-    question: "O sistema tem painel para barbeiro e para administrador?",
-    answer:
-      "Sim. O painel possui perfis de acesso para admin e barbeiro, com permissões específicas para agenda, clientes, serviços e operação diária.",
-  },
-  {
-    question: "E se o cliente quiser falar com uma pessoa?",
-    answer:
-      "Quando necessário, você pode assumir a conversa e concluir o atendimento manualmente no painel.",
-  },
-  {
-    question: "Funciona com mais de um barbeiro?",
-    answer:
-      "Sim. Você configura disponibilidade por profissional e o sistema respeita horários e regras da equipe.",
-  },
-  {
-    question: "Consigo acompanhar financeiro e desempenho da equipe?",
-    answer:
-      "Sim. O painel mostra faturamento, ticket médio, top serviços, top clientes e produtividade dos profissionais em tempo real.",
-  },
-  {
-    question: "O CorteZap envia notificações e lembretes?",
-    answer:
-      "Sim. O sistema envia eventos em tempo real no painel e lembretes automáticos para clientes via WhatsApp.",
-  },
+  // Objeções de compra primeiro (mais impacto na conversão)
   {
     question: "Como funciona o período de teste?",
     answer: "Você testa por 7 dias sem compromisso e sem cartão de crédito.",
@@ -95,14 +71,50 @@ export const HOME_FAQ_ENTRIES: FaqEntry[] = [
       "Sim. Você pode cancelar sem burocracia, de acordo com as regras do seu plano.",
   },
   {
+    question: "O agendamento funciona 24 horas por dia?",
+    answer:
+      "Sim. O bot atende e agenda horários 24h por dia, 7 dias por semana — inclusive fora do horário comercial.",
+  },
+  // Funcionalidades e entendimento do produto
+  {
+    question: "O bot realmente entende linguagem natural?",
+    answer:
+      'Sim. O CorteZap interpreta mensagens como "quero cortar amanhã de manhã", entende datas relativas e confirma o melhor horário disponível.',
+  },
+  {
+    question: "Preciso de um número de WhatsApp separado?",
+    answer:
+      "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos.",
+  },
+  {
+    question: "Funciona com mais de um barbeiro?",
+    answer:
+      "Sim. Você configura disponibilidade por profissional e o sistema respeita horários e regras da equipe.",
+  },
+  {
+    question: "E se o cliente quiser falar com uma pessoa?",
+    answer:
+      "Quando necessário, você pode assumir a conversa e concluir o atendimento manualmente no painel.",
+  },
+  {
     question: "O sistema envia lembrete automático para reduzir no-show?",
     answer:
       "Sim. O CorteZap envia lembretes automáticos via WhatsApp antes do horário agendado, ajudando a reduzir faltas e cancelamentos de última hora.",
   },
   {
-    question: "O agendamento funciona 24 horas por dia?",
+    question: "O sistema tem painel para barbeiro e para administrador?",
     answer:
-      "Sim. O bot atende e agenda horários 24h por dia, 7 dias por semana — inclusive fora do horário comercial.",
+      "Sim. O painel possui perfis de acesso para admin e barbeiro, com permissões específicas para agenda, clientes, serviços e operação diária.",
+  },
+  {
+    question: "Consigo acompanhar financeiro e desempenho da equipe?",
+    answer:
+      "Sim. O painel mostra faturamento, ticket médio, top serviços, top clientes e produtividade dos profissionais em tempo real.",
+  },
+  {
+    question: "O CorteZap envia notificações e lembretes?",
+    answer:
+      "Sim. O sistema envia eventos em tempo real no painel e lembretes automáticos para clientes via WhatsApp.",
   },
   {
     question: "O sistema faz controle de comissão dos barbeiros?",

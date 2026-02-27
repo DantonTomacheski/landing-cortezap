@@ -1,9 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
-import { createWhatsAppLink } from '../data/seo';
+import { ABACATEPAY_LINK_DEFAULT } from '../data/seo';
 
-const whatsappLink = createWhatsAppLink('Olá! Quero testar o CorteZap');
 const isHome = Astro.url.pathname === '/';
 const anchorPrefix = isHome ? '' : '/';
 
@@ -35,13 +34,13 @@ const navLinks = [
         </a>
       ))}
       <a
-        href={whatsappLink}
+        href={ABACATEPAY_LINK_DEFAULT}
         target="_blank"
         rel="noopener noreferrer"
-        class="relative overflow-hidden group rounded-xl bg-brand-500 px-6 py-2.5 text-[15px] font-bold text-white transition-all hover:scale-105 hover:bg-brand-400 shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
+        class="relative overflow-hidden group rounded-xl bg-brand-500 px-6 py-2.5 text-[15px] font-bold text-white transition-all hover:scale-[1.02] hover:bg-brand-400 shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.5)]"
       >
         <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer"></div>
-        <span class="relative z-10">Teste no WhatsApp</span>
+        <span class="relative z-10">Assinar agora</span>
       </a>
     </div>
 
@@ -76,12 +75,12 @@ const navLinks = [
         </a>
       ))}
       <a
-        href={whatsappLink}
+        href={ABACATEPAY_LINK_DEFAULT}
         target="_blank"
         rel="noopener noreferrer"
         class="mt-4 rounded-xl bg-brand-500 px-5 py-3.5 text-center text-[15px] font-bold text-white transition-colors hover:bg-brand-400 shadow-[0_0_15px_rgba(249,115,22,0.3)]"
       >
-        Teste no WhatsApp
+        Assinar agora
       </a>
     </div>
   </div>

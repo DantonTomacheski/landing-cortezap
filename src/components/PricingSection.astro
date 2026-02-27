@@ -1,14 +1,15 @@
 ---
 import PricingCard from './PricingCard.astro';
-import { createWhatsAppLink } from '../data/seo';
+import { createWhatsAppLink, ABACATEPAY_LINK_BASICO, ABACATEPAY_LINK_PROFISSIONAL, ABACATEPAY_LINK_EMPRESARIAL } from '../data/seo';
 
 const plans = [
   {
     name: 'Básico',
     price: 'R$ 79,90',
     priceNote: '/mês',
-    cta: 'Comece grátis',
-    ctaHref: createWhatsAppLink('Olá! Quero testar o CorteZap no plano Básico'),
+    cta: 'Assinar agora',
+    ctaHref: ABACATEPAY_LINK_BASICO,
+    ctaTarget: '_blank',
     features: [
       { text: 'Até 2 profissionais', included: true },
       { text: '1 usuário no painel', included: true },
@@ -29,8 +30,9 @@ const plans = [
     priceNote: '/mês',
     badge: 'Mais popular',
     highlighted: true,
-    cta: 'Comece grátis',
-    ctaHref: createWhatsAppLink('Olá! Quero testar o CorteZap no plano Profissional'),
+    cta: 'Assinar agora',
+    ctaHref: ABACATEPAY_LINK_PROFISSIONAL,
+    ctaTarget: '_blank',
     features: [
       { text: 'Até 8 profissionais', included: true },
       { text: '3 usuários no painel', included: true },
@@ -49,8 +51,9 @@ const plans = [
     name: 'Empresarial',
     price: 'R$ 199,90',
     priceNote: '/mês',
-    cta: 'Comece grátis',
-    ctaHref: createWhatsAppLink('Olá! Quero testar o CorteZap no plano Empresarial'),
+    cta: 'Assinar agora',
+    ctaHref: ABACATEPAY_LINK_EMPRESARIAL,
+    ctaTarget: '_blank',
     features: [
       { text: 'Profissionais ilimitados', included: true },
       { text: 'Usuários ilimitados no painel', included: true },
@@ -169,7 +172,7 @@ const plans = [
       document.querySelectorAll('#planos h3').forEach((h3) => {
         const name = h3.textContent?.trim() || '';
         if (prices[billing]?.[name]) {
-          const priceEl = h3.closest('[class*="rounded-[2rem]"]')?.querySelector('[data-price]') as HTMLElement | null;
+          const priceEl = h3.closest('[data-pricing-card]')?.querySelector('[data-price]') as HTMLElement | null;
           if (priceEl) priceEl.textContent = prices[billing][name];
         }
       });

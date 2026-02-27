@@ -19,15 +19,16 @@ const { name, price, priceNote, badge, features, cta, ctaHref, highlighted = fal
 ---
 
 <div
+  data-pricing-card
   class:list={[
-    'animate-on-scroll relative w-full flex flex-col rounded-[2rem] border p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]',
+    'animate-on-scroll relative w-full flex flex-col rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]',
     highlighted
       ? 'border-brand-500/50 bg-white/[0.03] shadow-2xl shadow-brand-500/20 backdrop-blur-md z-10'
-      : 'border-white/10 bg-white/[0.01] hover:bg-white/[0.02] backdrop-blur-sm',
+      : 'border-white/10 bg-white/[0.02] hover:bg-white/[0.03] backdrop-blur-sm',
   ]}
 >
   {highlighted && (
-    <div class="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-b from-brand-500/50 to-transparent pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+    <div class="absolute -inset-[1px] rounded-3xl bg-gradient-to-b from-brand-500/50 to-transparent pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
   )}
 
   {badge && (
