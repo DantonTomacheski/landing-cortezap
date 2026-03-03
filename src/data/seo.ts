@@ -9,16 +9,15 @@ export const DEFAULT_DESCRIPTION =
 export const WHATSAPP_NUMBER = "5542999689501";
 export const WHATSAPP_BASE_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-export const ABACATEPAY_LINK_ESSENCIAL =
-  "https://painel.cortezap.app.br/register?plan=essencial";
-export const ABACATEPAY_LINK_PROFISSIONAL =
-  "https://painel.cortezap.app.br/register?plan=profissional";
-export const ABACATEPAY_LINK_EMPRESARIAL =
-  "https://painel.cortezap.app.br/register?plan=empresarial";
+const _PAINEL =
+  import.meta.env.PUBLIC_PAINEL_URL ?? "https://painel.cortezap.app.br";
+export const ABACATEPAY_LINK_ESSENCIAL = `${_PAINEL}/register?plan=essencial`;
+export const ABACATEPAY_LINK_PROFISSIONAL = `${_PAINEL}/register?plan=profissional`;
+export const ABACATEPAY_LINK_EMPRESARIAL = `${_PAINEL}/register?plan=empresarial`;
 export const ABACATEPAY_LINK_BASICO = ABACATEPAY_LINK_ESSENCIAL;
 export const ABACATEPAY_LINK_DEFAULT = ABACATEPAY_LINK_PROFISSIONAL;
 
-export const PAINEL_URL = "https://painel.cortezap.app.br";
+export const PAINEL_URL = _PAINEL;
 
 export interface FaqEntry {
   question: string;
