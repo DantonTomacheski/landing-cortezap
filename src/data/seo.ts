@@ -4,17 +4,18 @@ export const SITE_NAME = "CorteZap";
 export const DEFAULT_TITLE =
   "CorteZap | Agendamento pelo WhatsApp e Painel para Barbearia";
 export const DEFAULT_DESCRIPTION =
-  "Sistema para barbearia com bot de WhatsApp, painel do barbeiro, agenda online, financeiro, clientes e equipe. Teste grátis por 7 dias.";
+  "Sistema para barbearia com bot de WhatsApp via API Oficial da Meta (Sem Risco de Banimento). Agendamento 24h, painel do barbeiro, agenda online, financeiro e equipe.";
 
 export const WHATSAPP_NUMBER = "5542999689501";
 export const WHATSAPP_BASE_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-export const ABACATEPAY_LINK_BASICO =
-  "https://app.abacatepay.com/pay/bill_Fy31qcpNnDZmkLhQWLaXAcgR";
+export const ABACATEPAY_LINK_ESSENCIAL =
+  "https://painel.cortezap.app.br/register?plan=essencial";
 export const ABACATEPAY_LINK_PROFISSIONAL =
-  "https://app.abacatepay.com/pay/bill_DbKXYHRzqAxyFYcMJP0EA6ya";
+  "https://painel.cortezap.app.br/register?plan=profissional";
 export const ABACATEPAY_LINK_EMPRESARIAL =
-  "https://app.abacatepay.com/pay/bill_a3MaetaJETqYZmstKxD2MBzy";
+  "https://painel.cortezap.app.br/register?plan=empresarial";
+export const ABACATEPAY_LINK_BASICO = ABACATEPAY_LINK_ESSENCIAL;
 export const ABACATEPAY_LINK_DEFAULT = ABACATEPAY_LINK_PROFISSIONAL;
 
 export const PAINEL_URL = "https://painel.cortezap.app.br";
@@ -62,8 +63,8 @@ export const CORE_KEYWORDS = [
 export const HOME_FAQ_ENTRIES: FaqEntry[] = [
   // Objeções de compra primeiro (mais impacto na conversão)
   {
-    question: "Como funciona o período de teste?",
-    answer: "Você testa por 7 dias sem compromisso e sem cartão de crédito.",
+    question: "Posso testar antes de assinar?",
+    answer: "Entre em contato pelo WhatsApp para discutir uma demonstração personalizada.",
   },
   {
     question: "Posso cancelar quando quiser?",
@@ -79,12 +80,17 @@ export const HOME_FAQ_ENTRIES: FaqEntry[] = [
   {
     question: "O bot realmente entende linguagem natural?",
     answer:
-      'Sim. O CorteZap interpreta mensagens como "quero cortar amanhã de manhã", entende datas relativas e confirma o melhor horário disponível.',
+      'Sim. O CorteZap usa Inteligência Artificial avançada para interpretar mensagens como "quero cortar amanhã de manhã", entender datas relativas e confirmar o melhor horário disponível de forma humanizada.',
+  },
+  {
+    question: "Existe risco do meu número ser banido?",
+    answer:
+      "Não, risco zero garantido. Nós utilizamos a API Oficial da Meta (WhatsApp Business API). Seu número estará 100% seguro contra banimentos, diferente de robôs piratas ou extensões de navegador.",
   },
   {
     question: "Preciso de um número de WhatsApp separado?",
     answer:
-      "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos.",
+      "Sim, o bot funciona com um número dedicado para a barbearia. O pareamento é feito por QR code em poucos minutos na nossa infraestrutura oficial.",
   },
   {
     question: "Funciona com mais de um barbeiro?",
@@ -191,14 +197,15 @@ export const SOFTWARE_APPLICATION_SCHEMA = {
   operatingSystem: "Web, Android, iOS",
   inLanguage: "pt-BR",
   description:
-    "Sistema para barbearia com bot de WhatsApp com IA, painel para barbeiro e administrador, agenda online, base de clientes, relatórios financeiros, notificações web push e gestão de equipe.",
+    "Sistema para barbearia com bot de WhatsApp com IA (API Oficial da Meta sem risco de banimento), painel para barbeiro e administrador, agenda online, base de clientes, relatórios financeiros e gestão de equipe.",
   url: SITE_URL,
   featureList: [
-    "Bot WhatsApp com inteligência artificial",
+    "Bot WhatsApp com inteligência artificial humanizada",
+    "Integração 100% segura com a API Oficial da Meta (Zero risco de banimento)",
     "Agendamento automático 24 horas por dia",
     "Painel para barbeiro e administrador",
     "Agenda por profissional com disponibilidade",
-    "Lembretes automáticos via WhatsApp",
+    "Lembretes automáticos via WhatsApp (Redução de No-Shows)",
     "Relatórios financeiros com exportação PDF",
     "Base de clientes com histórico",
     "Notificações web push em tempo real",
@@ -210,8 +217,8 @@ export const SOFTWARE_APPLICATION_SCHEMA = {
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "BRL",
-    lowPrice: "79.90",
-    highPrice: "199.90",
+    lowPrice: "97.00",
+    highPrice: "297.00",
     offerCount: 3,
   },
 };

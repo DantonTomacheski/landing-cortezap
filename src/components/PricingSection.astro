@@ -1,23 +1,24 @@
 ---
 import PricingCard from './PricingCard.astro';
-import { createWhatsAppLink, ABACATEPAY_LINK_BASICO, ABACATEPAY_LINK_PROFISSIONAL, ABACATEPAY_LINK_EMPRESARIAL } from '../data/seo';
+import { createWhatsAppLink, ABACATEPAY_LINK_ESSENCIAL, ABACATEPAY_LINK_PROFISSIONAL, ABACATEPAY_LINK_EMPRESARIAL } from '../data/seo';
 
 const plans = [
   {
-    name: 'Básico',
-    price: 'R$ 79,90',
+    name: 'Essencial',
+    price: 'R$ 97,00',
     priceNote: '/mês',
     cta: 'Assinar agora',
-    ctaHref: ABACATEPAY_LINK_BASICO,
+    ctaHref: ABACATEPAY_LINK_ESSENCIAL,
     ctaTarget: '_blank',
     features: [
       { text: 'Até 2 profissionais', included: true },
       { text: '1 usuário no painel', included: true },
       { text: '1 unidade', included: true },
       { text: 'Bot WhatsApp com IA (1 número)', included: true },
-      { text: 'Agendamento automático', included: true },
+      { text: 'Até 300 agendamentos/mês', included: true },
+      { text: 'Agendamento automático 24h', included: true },
       { text: 'Painel de gestão', included: true },
-      { text: 'Relatórios financeiros básicos', included: true },
+      { text: 'Relatórios básicos', included: true },
       { text: 'Base de clientes', included: true },
       { text: 'Notificações em tempo real', included: true },
       { text: 'Branding personalizado', included: false },
@@ -26,7 +27,7 @@ const plans = [
   },
   {
     name: 'Profissional',
-    price: 'R$ 119,90',
+    price: 'R$ 157,00',
     priceNote: '/mês',
     badge: 'Mais popular',
     highlighted: true,
@@ -35,31 +36,33 @@ const plans = [
     ctaTarget: '_blank',
     features: [
       { text: 'Até 8 profissionais', included: true },
-      { text: '3 usuários no painel', included: true },
+      { text: '5 usuários no painel', included: true },
       { text: '1 unidade', included: true },
       { text: 'Bot WhatsApp com IA (1 número)', included: true },
-      { text: 'Agendamento automático', included: true },
+      { text: 'Até 1.200 agendamentos/mês', included: true },
+      { text: 'Agendamento automático 24h', included: true },
       { text: 'Painel de gestão', included: true },
-      { text: 'Relatórios financeiros completos', included: true },
+      { text: 'Relatórios completos', included: true },
       { text: 'Base de clientes', included: true },
       { text: 'Notificações em tempo real', included: true },
       { text: 'Branding personalizado (logo + cor)', included: true },
-      { text: 'Suporte WhatsApp prioritário', included: true },
+      { text: 'Suporte prioritário', included: true },
     ],
   },
   {
     name: 'Empresarial',
-    price: 'R$ 199,90',
+    price: 'R$ 297,00',
     priceNote: '/mês',
     cta: 'Assinar agora',
     ctaHref: ABACATEPAY_LINK_EMPRESARIAL,
     ctaTarget: '_blank',
     features: [
-      { text: 'Profissionais ilimitados', included: true },
+      { text: 'Até 20 profissionais', included: true },
       { text: 'Usuários ilimitados no painel', included: true },
-      { text: 'Unidades ilimitadas', included: true },
-      { text: 'Bot WhatsApp com IA (múltiplos números)', included: true },
-      { text: 'Agendamento automático', included: true },
+      { text: 'Até 3 unidades', included: true },
+      { text: 'Bot WhatsApp com IA (até 3 números)', included: true },
+      { text: 'Até 3.000 agendamentos/mês', included: true },
+      { text: 'Agendamento automático 24h', included: true },
       { text: 'Painel de gestão', included: true },
       { text: 'Relatórios completos + IA insights', included: true },
       { text: 'Base de clientes', included: true },
@@ -81,30 +84,8 @@ const plans = [
         Planos flexíveis, focados<br class="hidden sm:block"/> <span class="text-brand-500">no seu crescimento</span>
       </h2>
       <p class="mt-6 max-w-2xl text-lg text-text-secondary font-light">
-        Todos os planos incluem o bot WhatsApp com IA. Teste grátis por 7 dias. Não precisa de cartão.
+        Todos os planos incluem bot WhatsApp com IA via API Oficial da Meta. Segurança total contra banimentos.
       </p>
-    </div>
-
-    <!-- Billing toggle -->
-    <div class="mt-12 flex items-center justify-center p-1.5 rounded-full bg-white/[0.03] border border-white/10 mx-auto w-max backdrop-blur-sm">
-      <button
-        data-billing="mensal"
-        class="billing-toggle rounded-full px-6 py-2.5 text-[15px] font-bold transition-all bg-brand-500 text-white shadow-lg shadow-brand-500/25"
-      >
-        Mensal
-      </button>
-      <button
-        data-billing="semestral"
-        class="billing-toggle rounded-full px-6 py-2.5 text-[15px] font-semibold transition-all text-text-secondary hover:text-white"
-      >
-        Semestral <span class="ml-1 text-xs font-black text-brand-400">-10%</span>
-      </button>
-      <button
-        data-billing="anual"
-        class="billing-toggle rounded-full px-6 py-2.5 text-[15px] font-semibold transition-all text-text-secondary hover:text-white"
-      >
-        Anual <span class="ml-1 text-xs font-black text-brand-400">-20%</span>
-      </button>
     </div>
 
     <div class="mt-16 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto xl:gap-8 items-center relative">
@@ -146,36 +127,3 @@ const plans = [
   </div>
 </section>
 
-<script>
-  const prices: Record<string, Record<string, string>> = {
-    mensal: { 'Básico': 'R$ 79,90', 'Profissional': 'R$ 119,90', 'Empresarial': 'R$ 199,90' },
-    semestral: { 'Básico': 'R$ 71,91', 'Profissional': 'R$ 107,91', 'Empresarial': 'R$ 179,91' },
-    anual: { 'Básico': 'R$ 63,92', 'Profissional': 'R$ 95,92', 'Empresarial': 'R$ 159,92' },
-  };
-
-  const buttons = document.querySelectorAll('.billing-toggle');
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const billing = (btn as HTMLElement).dataset.billing!;
-
-      // Update active toggle
-      buttons.forEach((b) => {
-        b.classList.remove('bg-brand-500', 'text-white', 'shadow-lg', 'shadow-brand-500/25');
-        b.classList.add('text-text-secondary');
-        b.classList.remove('font-bold');
-        b.classList.add('font-semibold');
-      });
-      btn.classList.add('bg-brand-500', 'text-white', 'shadow-lg', 'shadow-brand-500/25', 'font-bold');
-      btn.classList.remove('text-text-secondary', 'font-semibold');
-
-      // Update prices
-      document.querySelectorAll('#planos h3').forEach((h3) => {
-        const name = h3.textContent?.trim() || '';
-        if (prices[billing]?.[name]) {
-          const priceEl = h3.closest('[data-pricing-card]')?.querySelector('[data-price]') as HTMLElement | null;
-          if (priceEl) priceEl.textContent = prices[billing][name];
-        }
-      });
-    });
-  });
-</script>

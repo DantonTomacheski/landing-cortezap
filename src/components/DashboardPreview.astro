@@ -21,77 +21,240 @@
       
       <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl backdrop-blur-3xl bg-[#0A0A0A]/80 transition-transform duration-500 hover:-translate-y-2">
         <!-- Browser chrome -->
-        <div class="flex items-center gap-2 bg-white/5 px-4 py-3 border-b border-white/10">
+        <div class="flex items-center gap-2 bg-white/5 mx-0 px-4 py-3 border-b border-white/10 shrink-0">
           <div class="flex gap-2">
             <div class="h-3 w-3 rounded-full bg-red-500/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]"></div>
             <div class="h-3 w-3 rounded-full bg-yellow-500/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]"></div>
             <div class="h-3 w-3 rounded-full bg-green-500/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]"></div>
           </div>
-          <div class="ml-4 flex-1 rounded-md bg-black/40 px-3 py-1.5 border border-white/5 flex justify-center items-center">
-            <p class="text-[12px] font-mono text-text-muted flex items-center gap-2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg> suabarbearia.cortezap.app.br</p>
+          <div class="ml-4 flex-1 rounded-md bg-black/40 px-3 py-1.5 border border-white/5 flex gap-2 justify-center items-center">
+            <p class="text-[12px] font-mono text-text-muted flex items-center gap-2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg> painel.cortezap.app.br</p>
           </div>
           <div class="w-16"></div> <!-- Spacer for center alignment -->
         </div>
 
-        <!-- Dashboard content spacer -->
-        <div class="p-6 sm:p-8">
-          <div class="grid gap-4 sm:grid-cols-4">
-            <!-- Stat cards -->
-            <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.04]">
-              <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Hoje</p>
-              <p class="mt-2 text-3xl font-black text-white">12</p>
-              <p class="mt-1 text-xs text-brand-400 font-medium">+3 desde ontem</p>
-            </div>
-            <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.04]">
-              <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Semana</p>
-              <p class="mt-2 text-3xl font-black text-white">67</p>
-              <p class="mt-1 text-xs text-green-400 font-medium">+12% vs última</p>
-            </div>
-            <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.04]">
-              <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Faturamento</p>
-              <p class="mt-2 text-3xl font-black text-white">R$ 4.280</p>
-              <p class="mt-1 text-xs text-green-400 font-medium">Este mês</p>
-            </div>
-            <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.04]">
-              <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Clientes</p>
-              <p class="mt-2 text-3xl font-black text-white">248</p>
-              <p class="mt-1 text-xs text-text-secondary font-medium">Cadastrados</p>
-            </div>
+        <!-- App Layout -->
+        <div class="flex h-[580px] bg-[#0A0C10]">
+          <!-- Sidebar -->
+          <div class="hidden sm:flex w-56 flex-col border-r border-white/5 bg-[#0D1117] p-4">
+             <div class="flex items-center gap-2 px-2 py-4 mb-4">
+                <div class="h-8 w-8 rounded-lg bg-brand-500 flex items-center justify-center font-bold text-white shadow-[0_0_15px_rgba(249,115,22,0.4)]">C</div>
+                <span class="font-bold text-white text-lg tracking-tight">CorteZap</span>
+             </div>
+
+             <nav class="flex-1 space-y-1">
+               <div class="flex items-center gap-3 rounded-lg bg-brand-500/10 px-3 py-2.5 text-brand-400 font-medium cursor-pointer">
+                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                 Dashboard
+               </div>
+               <div class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-text-secondary hover:bg-white/5 hover:text-white transition-colors cursor-pointer">
+                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                 Agenda
+               </div>
+               <div class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-text-secondary hover:bg-white/5 hover:text-white transition-colors cursor-pointer">
+                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                 Clientes
+               </div>
+               <div class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-text-secondary hover:bg-white/5 hover:text-white transition-colors cursor-pointer">
+                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                 Financeiro
+               </div>
+             </nav>
+             <div class="pt-4 border-t border-white/5">
+                <div class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-text-secondary hover:bg-white/5 hover:text-white cursor-pointer">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  Ajustes
+                </div>
+             </div>
           </div>
 
-          <!-- Fake agenda rows -->
-          <div class="mt-6 rounded-xl border border-white/5 bg-white/[0.02] p-5 backdrop-blur-sm">
-            <div class="mb-5 flex items-center justify-between">
-              <p class="text-base font-bold text-white">Agenda de hoje</p>
-              <span class="rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-xs font-semibold text-brand-400 shadow-sm">12 agendamentos</span>
+          <!-- Main Content -->
+          <div class="flex-1 flex flex-col p-6 sm:p-8 overflow-y-auto relative">
+            <h1 class="text-2xl font-black text-white mb-6">Dashboard</h1>
+            
+            <!-- Real-time Notification Toast (Hidden by default) -->
+            <div id="demo-notification" class="absolute top-6 right-6 translate-x-full opacity-0 pointer-events-none transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center gap-3 rounded-xl border border-white/10 bg-[#1A1D24] p-3 shadow-2xl z-50">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-500/20 text-brand-400">
+                <svg class="h-5 w-5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">Novo Agendamento</p>
+                <p class="text-xs text-text-secondary">Via WhatsApp Bot <span class="text-brand-400 font-bold ml-1">•</span> Agora</p>
+              </div>
             </div>
-            <div class="space-y-3">
-              {[
-                { time: '09:00', name: 'João Silva', service: 'Corte + Barba', status: 'confirmado', statusColor: 'text-green-300 bg-green-500/10 border-green-500/20', avatar: 'JS' },
-                { time: '09:45', name: 'Pedro Santos', service: 'Corte de cabelo', status: 'confirmado', statusColor: 'text-green-300 bg-green-500/10 border-green-500/20', avatar: 'PS' },
-                { time: '10:30', name: 'Lucas Oliveira', service: 'Barba', status: 'pendente', statusColor: 'text-brand-300 bg-brand-500/10 border-brand-500/20', avatar: 'LO' },
-                { time: '11:00', name: 'Rafael Costa', service: 'Corte + Sobrancelha', status: 'pendente', statusColor: 'text-brand-300 bg-brand-500/10 border-brand-500/20', avatar: 'RC' },
-              ].map((row) => (
-                <div class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3 text-sm transition-colors hover:bg-black/40 cursor-pointer">
-                  <div class="flex items-center gap-4">
-                    <span class="font-mono text-xs font-medium text-text-muted w-10">{row.time}</span>
-                    <div class="hidden sm:flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-xs font-bold text-white">
-                      {row.avatar}
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-semibold text-white">{row.name}</span>
-                        <span class="text-xs text-text-secondary sm:hidden">{row.service}</span>
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <span class="hidden text-[13px] font-medium text-text-secondary sm:inline">{row.service}</span>
-                    <span class={`rounded-full border px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider ${row.statusColor}`}>{row.status}</span>
-                  </div>
+
+            <div class="grid gap-4 sm:grid-cols-4 mb-8">
+              <!-- Stat cards -->
+              <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 shadow-sm transition-transform duration-300" id="card-agendamentos">
+                <p class="text-xs font-medium text-text-muted uppercase tracking-wider flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> Agendamentos</p>
+                <p class="mt-2 text-3xl font-black text-white" id="stat-agendamentos">12</p>
+                <p class="mt-1 text-xs text-brand-400 font-medium">+3 agendamentos hoje</p>
+              </div>
+              <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 shadow-sm transition-transform duration-300" id="card-faturamento">
+                <p class="text-xs font-medium text-text-muted uppercase tracking-wider flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Faturamento Hoje</p>
+                <p class="mt-2 text-3xl font-black text-white" id="stat-faturamento"><span class="text-lg opacity-50 font-medium">R$</span> 540</p>
+                <p class="mt-1 text-xs text-green-400 font-medium">Via AbacatePay & Pix</p>
+              </div>
+              <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 shadow-sm">
+                <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Pacotes Vendidos</p>
+                <p class="mt-2 text-3xl font-black text-white">4</p>
+                <p class="mt-1 text-xs text-text-secondary font-medium">Em andamento</p>
+              </div>
+              <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 shadow-sm">
+                <p class="text-xs font-medium text-text-muted uppercase tracking-wider">Novos Clientes</p>
+                <p class="mt-2 text-3xl font-black text-white">2</p>
+                <p class="mt-1 text-xs text-brand-400 font-medium">Via WhatsApp bot</p>
+              </div>
+            </div>
+
+            <!-- Fake agenda rows -->
+            <div class="rounded-xl border border-white/5 bg-white/[0.02] p-5 shadow-sm flex-1 flex flex-col">
+              <div class="mb-5 flex items-center justify-between">
+                <div>
+                   <p class="text-base font-bold text-white">Agenda de Hoje</p>
+                   <p class="text-sm text-text-muted mt-1">Sábado, 02 de Março</p>
                 </div>
-              ))}
+                <div class="flex gap-2">
+                   <button class="rounded-lg bg-white/5 px-3 py-1.5 text-xs font-medium text-white hover:bg-white/10 transition-colors">Voltar</button>
+                   <button class="rounded-lg bg-brand-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-brand-400 transition-colors shadow-[0_0_10px_rgba(249,115,22,0.3)]">Novo Horário</button>
+                </div>
+              </div>
+              <div class="space-y-2" id="agenda-rows-container">
+                {[
+                  { time: '09:45', name: 'Pedro Santos', service: 'Corte de cabelo', status: 'concluído', statusColor: 'text-gray-400 bg-white/5 border-white/10', avatar: 'PS' },
+                  { time: '10:30', name: 'Lucas Oliveira', service: 'Barba', status: 'em andamento', statusColor: 'text-brand-300 bg-brand-500/10 border-brand-500/20', avatar: 'LO' },
+                  { time: '11:00', name: 'Rafael Costa', service: 'Corte + Sobrancelha', status: 'pendente', statusColor: 'text-yellow-300 bg-yellow-500/10 border-yellow-500/20', avatar: 'RC' },
+                ].map((row) => (
+                  <div class="flex items-center justify-between rounded-lg border border-white/5 bg-white/[0.01] px-4 py-3 text-sm transition-colors hover:bg-white/[0.03] cursor-pointer group">
+                    <div class="flex items-center gap-4">
+                      <span class="font-mono text-xs font-medium text-text-muted w-10 text-right">{row.time}</span>
+                      <div class="hidden sm:flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-gray-700 to-gray-600 text-xs font-bold text-white shadow-inner">
+                        {row.avatar}
+                      </div>
+                      <div class="flex flex-col">
+                          <span class="font-semibold text-white">{row.name}</span>
+                          <span class="text-xs text-text-secondary sm:hidden">{row.service}</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                      <span class="hidden text-[13px] font-medium text-text-secondary sm:inline">{row.service}</span>
+                      <span class={`rounded-md border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${row.statusColor}`}>{row.status}</span>
+                      <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-white/10 rounded">
+                         <svg class="w-4 h-4 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Escuta o evento personalizado emitido pelo mockup interativo do WhatsApp
+  document.addEventListener('demo:booking-completed', (event: any) => {
+    const data = event.detail;
+    
+    // Atualiza contadores com animação
+    const statAgendamentos = document.getElementById('stat-agendamentos');
+    const cardAgendamentos = document.getElementById('card-agendamentos');
+    if (statAgendamentos && cardAgendamentos) {
+      const current = parseInt(statAgendamentos.innerText) || 12;
+      statAgendamentos.innerText = (current + 1).toString();
+      statAgendamentos.classList.add('text-brand-400');
+      cardAgendamentos.classList.add('scale-[1.05]', 'border-brand-500/50', 'bg-brand-500/10');
+      setTimeout(() => {
+        statAgendamentos.classList.remove('text-brand-400');
+        cardAgendamentos.classList.remove('scale-[1.05]', 'border-brand-500/50', 'bg-brand-500/10');
+      }, 1000);
+    }
+    
+    const statFaturamento = document.getElementById('stat-faturamento');
+    const cardFaturamento = document.getElementById('card-faturamento');
+    const novoValor = data.price || 35;
+    if (statFaturamento && cardFaturamento) {
+       // extrai numero
+       const atualText = statFaturamento.innerText.replace(/R\$\s*/, '').replace(/\./g, '');
+       const total = (parseInt(atualText) || 540) + novoValor;
+       statFaturamento.innerHTML = `<span class="text-lg opacity-50 font-medium">R$</span> ${total}`;
+       statFaturamento.classList.add('text-green-400');
+       cardFaturamento.classList.add('scale-[1.05]', 'border-green-500/50', 'bg-green-500/10');
+       setTimeout(() => {
+          statFaturamento.classList.remove('text-green-400');
+          cardFaturamento.classList.remove('scale-[1.05]', 'border-green-500/50', 'bg-green-500/10');
+       }, 1000);
+    }
+
+    // Exibir notificação tipo Toast (WebSocket real-time simulado)
+    const toast = document.getElementById('demo-notification');
+    if (toast) {
+       toast.classList.remove('translate-x-full', 'opacity-0');
+       setTimeout(() => {
+          toast.classList.add('translate-x-full', 'opacity-0');
+       }, 4000);
+    }
+    
+    // Cria linha da agenda
+    const container = document.getElementById('agenda-rows-container');
+    if (container) {
+      const rowHtml = `
+        <div class="flex items-center justify-between rounded-lg border border-brand-500/30 bg-brand-500/10 px-4 py-3 text-sm hover:bg-brand-500/20 cursor-pointer group animate-shimmer relative overflow-hidden transform scale-95 opacity-0 transition-all duration-500 outline outline-2 outline-brand-500/50" id="new-booking-row">
+          <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shimmer_1.5s_infinite]"></div>
+          <div class="flex items-center gap-4 relative z-10">
+            <span class="font-mono text-xs font-bold text-brand-300 w-10 text-right">${data.time}</span>
+            <div class="hidden sm:flex h-8 w-8 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white shadow-inner">
+              J
+            </div>
+            <div class="flex flex-col">
+                <span class="font-semibold text-white tracking-wide">${data.name}</span>
+                <span class="text-xs text-brand-300 sm:hidden">${data.service}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 relative z-10">
+            <span class="hidden text-[13px] font-medium text-brand-200 sm:inline">${data.service}</span>
+            <span class="rounded-md border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-green-300 bg-green-500/20 border-green-500/30">NOVO</span>
+            <button class="opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-white/10 rounded">
+               <svg class="w-4 h-4 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+            </button>
+          </div>
+        </div>
+      `;
+      
+      // Insere no topo
+      container.insertAdjacentHTML('afterbegin', rowHtml);
+      
+      // Anima entrada
+      setTimeout(() => {
+        const newRow = document.getElementById('new-booking-row');
+        if (newRow) {
+          newRow.classList.remove('scale-95', 'opacity-0');
+          setTimeout(() => {
+            newRow.classList.remove('outline', 'outline-2', 'outline-brand-500/50', 'bg-brand-500/10', 'border-brand-500/30');
+            newRow.classList.add('bg-white/[0.01]', 'border-white/5');
+            // Altera badge para pendente padrão
+            const badge = newRow.querySelector('span.rounded-md');
+            if (badge) {
+               badge.className = 'rounded-md border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-yellow-300 bg-yellow-500/10 border-yellow-500/20 transition-all';
+               badge.innerText = 'PENDENTE';
+            }
+          }, 3000);
+        }
+      }, 50);
+      
+      // Rola para a sessaão do dashboard para o usuário ver
+      const dashboardSection = container.closest('section');
+      if (dashboardSection && window.innerWidth >= 1024) {
+         // Não forçamos o scroll scrollIntoView agressivo, porque o usuário pode estar lendo. 
+         // Mostramos apenas uma notificação toast genérica no topo? Talvez não seja necessário,
+         // visualmente o pulso já ajuda quem rolar.
+      }
+    }
+  });
+</script>
       </div>
     </div>
   </div>
