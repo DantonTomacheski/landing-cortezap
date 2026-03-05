@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "../..",
+    },
+    {
+      "path": "../../../backend-cortezap",
+    },
+    {
+      "path": "../../../frontend-cortezap",
+    },
+    {
+      "path": "../../../painel-cortezap",
+    },
+  ],
+  "settings": {},
+}
