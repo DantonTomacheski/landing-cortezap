@@ -16,10 +16,12 @@ interface Props {
 }
 
 const { name, price, priceNote, badge, features, cta, ctaHref, highlighted = false } = Astro.props;
+const testId = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
 ---
 
 <div
   data-pricing-card
+  data-testid={`pricing-card-${testId}`}
   class:list={[
     'animate-on-scroll relative w-full flex flex-col rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]',
     highlighted
@@ -65,6 +67,7 @@ const { name, price, priceNote, badge, features, cta, ctaHref, highlighted = fal
   </ul>
 
   <a
+    data-testid={`pricing-card-${testId}-cta`}
     href={ctaHref}
     target="_blank"
     rel="noopener noreferrer"

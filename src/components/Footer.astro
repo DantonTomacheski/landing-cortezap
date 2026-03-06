@@ -13,20 +13,21 @@ const links = [
 ];
 ---
 
-<footer class="border-t border-white/10 bg-[#050505]">
+<footer data-testid="footer" class="border-t border-white/10 bg-[#050505]">
   <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="flex flex-col items-center gap-8 md:flex-row md:justify-between">
       <div class="flex flex-col items-center gap-4 md:items-start">
-        <img src={`${CDN_BASE}/logo.png`} alt="CorteZap" width="861" height="209" class="h-8 sm:h-10 w-auto opacity-90" />
+        <img data-testid="footer-logo" src={`${CDN_BASE}/logo.png`} alt="CorteZap" width="861" height="209" class="h-8 sm:h-10 w-auto opacity-90" />
         <p class="text-sm text-text-muted font-light max-w-xs text-center md:text-left">
           Sistema para barbearia com agendamento no WhatsApp e painel para barbeiro.
         </p>
       </div>
 
-      <nav class="flex flex-wrap justify-center gap-8">
+      <nav data-testid="footer-nav" class="flex flex-wrap justify-center gap-8">
         {links.map((link) => (
           <a
             href={link.href}
+            data-testid={`footer-link-${link.label.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')}`}
             class="text-[15px] font-medium text-text-secondary transition-colors hover:text-white"
           >
             {link.label}
@@ -48,8 +49,8 @@ const links = [
         </div>
       </div>
       <div class="flex items-center gap-6">
-        <a href="/termos-de-uso" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Termos de Uso</a>
-        <a href="/politica-de-privacidade" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Privacidade</a>
+        <a data-testid="footer-terms" href="/termos-de-uso" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Termos de Uso</a>
+        <a data-testid="footer-privacy" href="/politica-de-privacidade" class="text-xs font-medium text-text-muted/60 hover:text-white transition-colors">Privacidade</a>
       </div>
     </div>
   </div>

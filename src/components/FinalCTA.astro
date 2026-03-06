@@ -2,7 +2,7 @@
 import { ABACATEPAY_LINK_DEFAULT } from '../data/seo';
 ---
 
-<section class="relative overflow-hidden py-24 sm:py-32 bg-[#050505]">
+<section data-testid="final-cta-section" class="relative overflow-hidden py-24 sm:py-32 bg-[#050505]">
   <!-- Dynamic modern grid background -->
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
 
@@ -22,6 +22,7 @@ import { ABACATEPAY_LINK_DEFAULT } from '../data/seo';
 
       <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <a
+          data-testid="final-cta-btn"
           href={ABACATEPAY_LINK_DEFAULT}
           target="_blank"
           rel="noopener noreferrer"

@@ -74,7 +74,7 @@ const plans = [
 ];
 ---
 
-<section id="planos" class="relative py-24 sm:py-32">
+<section id="planos" data-testid="pricing-section" class="relative py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="animate-on-scroll text-center flex flex-col items-center">
       <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
@@ -107,7 +107,7 @@ const plans = [
     </div>
 
     <!-- Custom plan -->
-    <div class="animate-on-scroll mt-16 max-w-4xl mx-auto rounded-3xl border border-white/10 bg-[#0A0A0A]/50 p-8 sm:p-10 text-center backdrop-blur-md relative overflow-hidden group">
+    <div data-testid="pricing-custom-plan" class="animate-on-scroll mt-16 max-w-4xl mx-auto rounded-3xl border border-white/10 bg-[#0A0A0A]/50 p-8 sm:p-10 text-center backdrop-blur-md relative overflow-hidden group">
       <div class="absolute inset-0 bg-gradient-to-r from-brand-600/10 via-transparent to-brand-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
       <h3 class="relative z-10 text-2xl font-bold text-white">Monte seu plano</h3>
@@ -118,6 +118,7 @@ const plans = [
         <span>A partir de <span class="text-brand-400 font-bold text-lg">R$ 150,00</span>/mês</span>
       </div>
       <a
+        data-testid="pricing-custom-plan-cta"
         href={`${ABACATEPAY_LINK_ESSENCIAL.replace('plan=essencial', 'plan=custom')}`}
         class="relative z-10 mt-6 inline-flex items-center gap-2 rounded-xl border border-brand-500/30 bg-brand-500/10 px-8 py-3.5 text-[15px] font-bold text-brand-400 transition-all hover:border-brand-500/50 hover:bg-brand-500/20 hover:text-brand-300"
       >

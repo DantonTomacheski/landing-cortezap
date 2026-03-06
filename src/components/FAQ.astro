@@ -4,7 +4,7 @@ import { HOME_FAQ_ENTRIES } from '../data/seo';
 const faqs = HOME_FAQ_ENTRIES;
 ---
 
-<section id="faq" class="relative py-24 sm:py-32">
+<section id="faq" data-testid="faq-section" class="relative py-24 sm:py-32">
   <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="animate-on-scroll text-center flex flex-col items-center">
       <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
@@ -17,9 +17,9 @@ const faqs = HOME_FAQ_ENTRIES;
     </div>
 
     <div class="mt-16 space-y-4">
-      {faqs.map((faq) => (
-        <details class="group rounded-2xl border border-white/10 bg-[#0A0A0A] transition-all hover:bg-white/[0.02]">
-          <summary class="flex cursor-pointer items-center justify-between px-6 py-5 text-[15px] font-bold text-white transition-colors hover:text-brand-400 [&::-webkit-details-marker]:hidden list-none select-none">
+      {faqs.map((faq, i) => (
+        <details data-testid={`faq-item-${i}`} class="group rounded-2xl border border-white/10 bg-[#0A0A0A] transition-all hover:bg-white/[0.02]">
+          <summary data-testid={`faq-item-${i}-summary`} class="flex cursor-pointer items-center justify-between px-6 py-5 text-[15px] font-bold text-white transition-colors hover:text-brand-400 [&::-webkit-details-marker]:hidden list-none select-none">
             {faq.question}
             <span class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/5 transition-transform group-open:rotate-180 group-open:bg-brand-500/10 group-open:text-brand-400">
               <svg
@@ -32,7 +32,7 @@ const faqs = HOME_FAQ_ENTRIES;
               </svg>
             </span>
           </summary>
-          <div class="px-6 pb-6 pt-2 text-[15px] leading-relaxed text-text-secondary font-light">
+          <div data-testid={`faq-item-${i}-answer`} class="px-6 pb-6 pt-2 text-[15px] leading-relaxed text-text-secondary font-light">
             <div class="border-t border-white/10 pt-4">
                {faq.answer}
             </div>
