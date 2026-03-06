@@ -7,13 +7,13 @@ const metrics = [
 ];
 ---
 
-<section data-testid="social-proof-section" class="relative border-y border-border bg-bg-card/50 py-12 sm:py-16">
+<section data-testid="social-proof-section" class="border-t border-white/[0.06] py-12 sm:py-16">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
+    <div class="grid grid-cols-2 gap-8 lg:grid-cols-4">
       {metrics.map((metric, i) => (
         <div data-testid={`social-proof-metric-${i}`} class="animate-on-scroll flex flex-col items-center text-center">
-          <span class="text-3xl font-black text-brand-400 sm:text-4xl tracking-tight">{metric.value}</span>
-          <span class="mt-1.5 text-sm text-text-secondary">{metric.label}</span>
+          <span class="text-2xl font-semibold text-white sm:text-3xl tracking-tight">{metric.value}</span>
+          <span class="mt-1 text-xs text-text-muted">{metric.label}</span>
         </div>
       ))}
     </div>

@@ -4,56 +4,41 @@ const steps = [
     number: '01',
     title: 'Cliente manda mensagem',
     description: 'Seu cliente envia uma mensagem no WhatsApp da barbearia, como faria normalmente. Via API Oficial da Meta — sem robô pirata, sem risco de banimento.',
-    icon: `<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>`,
   },
   {
     number: '02',
     title: 'IA entende e agenda',
     description: 'O bot com inteligência artificial interpreta a mensagem, verifica horários disponíveis e confirma o agendamento em segundos.',
-    icon: `<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>`,
   },
   {
     number: '03',
     title: 'Você gerencia no painel',
     description: 'Acompanhe agendamentos, finanças e clientes em tempo real no painel para barbeiro, com tudo sincronizado.',
-    icon: `<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg>`,
   },
 ];
 ---
 
 <section id="como-funciona" data-testid="how-it-works-section" class="relative py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="animate-on-scroll text-center flex flex-col items-center">
-      <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
-        Simplicidade
-      </div>
-      <h2 class="mt-2 text-4xl font-black tracking-tight sm:text-5xl text-white">
-        Como funciona?
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="animate-on-scroll text-center">
+      <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl text-white">
+        Como funciona
       </h2>
-      <p class="mt-6 max-w-2xl text-lg text-text-secondary font-light">
+      <p class="mt-4 max-w-2xl mx-auto text-base text-text-secondary">
         Em 3 passos, você ativa o agendamento por WhatsApp e o painel da barbearia.
       </p>
     </div>
 
-    <div class="mt-20 grid gap-8 md:grid-cols-3 relative">
-      <!-- Ambient Glow behind cards -->
-      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[30%] bg-brand-500/20 blur-[120px] rounded-full pointer-events-none -z-10"></div>
-
+    <div class="mt-16 grid gap-px md:grid-cols-3 rounded-xl border border-white/[0.06] overflow-hidden bg-white/[0.06]">
       {steps.map((step, index) => (
         <div
           data-testid={`how-it-works-step-${step.number}`}
-          class="animate-on-scroll group relative flex flex-col items-center rounded-3xl border border-white/10 bg-white/[0.02] p-8 text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.04] hover:-translate-y-1 hover:border-brand-500/30 hover:shadow-2xl hover:shadow-brand-500/10 overflow-hidden"
-          style={`animation-delay: ${index * 150}ms`}
+          class="animate-on-scroll flex flex-col bg-bg-primary p-8 sm:p-10"
+          style={`animation-delay: ${index * 100}ms`}
         >
-          <!-- Giant Background Number -->
-          <span class="absolute -top-4 right-4 text-8xl font-black text-white/[0.03] select-none transition-transform duration-500 group-hover:scale-110 group-hover:text-white/[0.05]">{step.number}</span>
-          
-          <div class="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-brand-400 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] transition-colors duration-300 group-hover:text-brand-300 group-hover:bg-brand-500/10">
-            <Fragment set:html={step.icon} />
-          </div>
-          
-          <h3 class="relative z-10 text-xl font-bold text-white tracking-tight">{step.title}</h3>
-          <p class="relative z-10 mt-4 text-[15px] text-text-secondary leading-relaxed font-light transition-colors group-hover:text-gray-300">{step.description}</p>
+          <span class="text-sm font-mono text-text-muted">{step.number}</span>
+          <h3 class="mt-3 text-lg font-semibold text-white">{step.title}</h3>
+          <p class="mt-3 text-sm text-text-secondary leading-relaxed">{step.description}</p>
         </div>
       ))}
     </div>

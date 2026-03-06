@@ -2,43 +2,38 @@
 import { ABACATEPAY_LINK_DEFAULT } from '../data/seo';
 ---
 
-<section data-testid="final-cta-section" class="relative overflow-hidden py-24 sm:py-32 bg-[#050505]">
-  <!-- Dynamic modern grid background -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
-
-  <!-- Background gradient -->
+<section data-testid="final-cta-section" class="relative py-24 sm:py-32 border-t border-white/[0.06]">
+  <!-- Atmospheric gradient -->
   <div class="pointer-events-none absolute inset-0">
-    <div class="absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-500/20 blur-[120px]"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-[60%] rounded-full bg-[radial-gradient(circle,rgba(120,80,200,0.04),transparent_70%)]"></div>
   </div>
 
-  <div class="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8 z-10">
+  <div class="relative mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8 z-10">
     <div class="animate-on-scroll">
-      <h2 class="text-4xl font-black tracking-tight sm:text-5xl lg:text-5xl text-white">
-        A era do papelzinho acabou. <br/> <span class="bg-gradient-to-r from-brand-400 to-brand-600 bg-clip-text text-transparent pb-1 inline-block mt-2">Automatize sua barbearia com WhatsApp + painel.</span>
+      <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl text-white">
+        Pronto para automatizar sua barbearia?
       </h2>
-      <p class="mx-auto mt-6 max-w-xl text-lg text-text-secondary leading-relaxed font-light">
+      <p class="mx-auto mt-4 max-w-lg text-base text-text-secondary">
         Barbearias que usam o CorteZap reduzem no-shows e atendem clientes 24h sem esforço. Configure em 10 minutos.
       </p>
 
-      <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+      <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <a
           data-testid="final-cta-btn"
           href={ABACATEPAY_LINK_DEFAULT}
           target="_blank"
           rel="noopener noreferrer"
-          class="relative overflow-hidden group inline-flex items-center gap-2 rounded-xl bg-brand-500 px-8 py-4 text-base font-bold text-white transition-all hover:bg-brand-400 hover:scale-[1.02] shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(249,115,22,0.6)]"
+          class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-600"
         >
-          <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer"></div>
-
-          <svg class="h-5 w-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          Começar agora
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
-          <span class="relative z-10">Assinar agora</span>
         </a>
       </div>
 
-      <p class="mt-6 text-xs font-bold text-text-muted/60 tracking-widest uppercase">
-        Sem fidelidade • Cancele quando quiser • Suporte no WhatsApp
+      <p class="mt-6 text-xs text-text-muted">
+        Sem fidelidade · Cancele quando quiser · Suporte no WhatsApp
       </p>
     </div>
   </div>

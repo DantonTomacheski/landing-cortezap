@@ -5,11 +5,10 @@ import { createWhatsAppLink, ABACATEPAY_LINK_ESSENCIAL, ABACATEPAY_LINK_PROFISSI
 const plans = [
   {
     name: 'Essencial',
-    price: 'R$ 150,00',
+    price: 'R$ 150',
     priceNote: '/mês',
     cta: 'Assinar agora',
     ctaHref: ABACATEPAY_LINK_ESSENCIAL,
-    ctaTarget: '_blank',
     features: [
       { text: 'Até 2 profissionais', included: true },
       { text: '1 usuário no painel', included: true },
@@ -27,13 +26,12 @@ const plans = [
   },
   {
     name: 'Profissional',
-    price: 'R$ 200,00',
+    price: 'R$ 200',
     priceNote: '/mês',
-    badge: 'Mais popular',
+    badge: 'Popular',
     highlighted: true,
     cta: 'Assinar agora',
     ctaHref: ABACATEPAY_LINK_PROFISSIONAL,
-    ctaTarget: '_blank',
     features: [
       { text: 'Até 8 profissionais', included: true },
       { text: '5 usuários no painel', included: true },
@@ -51,11 +49,10 @@ const plans = [
   },
   {
     name: 'Empresarial',
-    price: 'R$ 350,00',
+    price: 'R$ 350',
     priceNote: '/mês',
     cta: 'Assinar agora',
     ctaHref: ABACATEPAY_LINK_EMPRESARIAL,
-    ctaTarget: '_blank',
     features: [
       { text: 'Até 20 profissionais', included: true },
       { text: 'Usuários ilimitados no painel', included: true },
@@ -75,23 +72,17 @@ const plans = [
 ---
 
 <section id="planos" data-testid="pricing-section" class="relative py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="animate-on-scroll text-center flex flex-col items-center">
-      <div class="mb-4 inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-400">
-        Investimento
-      </div>
-      <h2 class="mt-2 text-4xl font-black tracking-tight sm:text-5xl text-white">
-        Planos flexíveis, focados<br class="hidden sm:block"/> <span class="text-brand-500">no seu crescimento</span>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="animate-on-scroll text-center">
+      <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl text-white">
+        Planos
       </h2>
-      <p class="mt-6 max-w-2xl text-lg text-text-secondary font-light">
-        Todos os planos incluem bot WhatsApp com IA via API Oficial da Meta. Segurança total contra banimentos.
+      <p class="mt-4 max-w-xl mx-auto text-base text-text-secondary">
+        Todos incluem bot WhatsApp com IA via API Oficial da Meta. Sem risco de banimento.
       </p>
     </div>
 
-    <div class="mt-16 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto xl:gap-8 items-center relative">
-        <!-- Background Ambient Glow behind center plan -->
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[30%] h-[80%] bg-brand-500/30 blur-[120px] rounded-full pointer-events-none -z-10"></div>
-    
+    <div class="mt-16 grid gap-4 md:grid-cols-3 max-w-5xl mx-auto items-start">
       {plans.map((plan) => (
         <PricingCard
           name={plan.name}
@@ -107,25 +98,22 @@ const plans = [
     </div>
 
     <!-- Custom plan -->
-    <div data-testid="pricing-custom-plan" class="animate-on-scroll mt-16 max-w-4xl mx-auto rounded-3xl border border-white/10 bg-[#0A0A0A]/50 p-8 sm:p-10 text-center backdrop-blur-md relative overflow-hidden group">
-      <div class="absolute inset-0 bg-gradient-to-r from-brand-600/10 via-transparent to-brand-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-      <h3 class="relative z-10 text-2xl font-bold text-white">Monte seu plano</h3>
-      <p class="relative z-10 mt-3 text-base text-text-secondary font-light max-w-2xl mx-auto">
-        Configure exatamente o que sua barbearia precisa. Escolha a quantidade de barbeiros, unidades, números WhatsApp e mais — com preço calculado em tempo real.
+    <div data-testid="pricing-custom-plan" class="animate-on-scroll mt-12 max-w-3xl mx-auto rounded-xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8 text-center">
+      <h3 class="text-lg font-semibold text-white">Monte seu plano</h3>
+      <p class="mt-2 text-sm text-text-secondary max-w-lg mx-auto">
+        Configure exatamente o que sua barbearia precisa. Escolha barbeiros, unidades, números WhatsApp — com preço calculado em tempo real.
       </p>
-      <div class="relative z-10 mt-4 flex items-center justify-center gap-4 text-sm text-text-secondary">
-        <span>A partir de <span class="text-brand-400 font-bold text-lg">R$ 150,00</span>/mês</span>
+      <div class="mt-3 text-sm text-text-muted">
+        A partir de <span class="text-white font-medium">R$ 150</span>/mês
       </div>
       <a
         data-testid="pricing-custom-plan-cta"
         href={`${ABACATEPAY_LINK_ESSENCIAL.replace('plan=essencial', 'plan=custom')}`}
-        class="relative z-10 mt-6 inline-flex items-center gap-2 rounded-xl border border-brand-500/30 bg-brand-500/10 px-8 py-3.5 text-[15px] font-bold text-brand-400 transition-all hover:border-brand-500/50 hover:bg-brand-500/20 hover:text-brand-300"
+        class="mt-5 inline-flex items-center gap-1.5 text-sm text-text-secondary hover:text-white transition-colors"
       >
         Montar meu plano
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>
     </div>
   </div>
 </section>
-
