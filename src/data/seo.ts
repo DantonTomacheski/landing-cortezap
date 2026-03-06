@@ -6,7 +6,7 @@ export const DEFAULT_TITLE =
 export const DEFAULT_DESCRIPTION =
   "Sistema para barbearia com bot de WhatsApp via API Oficial da Meta (Sem Risco de Banimento). Agendamento 24h, painel do barbeiro, agenda online, financeiro e equipe.";
 
-export const WHATSAPP_NUMBER = "5542999689501";
+export const WHATSAPP_NUMBER = "5542988022091";
 export const WHATSAPP_BASE_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 const _PAINEL =

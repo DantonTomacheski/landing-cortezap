@@ -7,7 +7,7 @@ CorteZap é uma plataforma SaaS brasileira voltada para barbearias de todos os p
 O cliente agenda pelo WhatsApp da barbearia em linguagem natural (ex: "quero cortar amanhã às 10h"), sem precisar baixar aplicativo. O sistema interpreta a mensagem, verifica disponibilidade, confirma o horário e envia lembretes automáticos para reduzir faltas. Tudo que acontece no WhatsApp aparece em tempo real no painel para o barbeiro e para o administrador.
 
 - URL: https://cortezap.app.br
-- Contato: https://wa.me/5542999689501
+- Contato: https://wa.me/5542988022091
 
 ## Produto
 
