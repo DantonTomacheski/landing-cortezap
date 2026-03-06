@@ -9,17 +9,17 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "/favicon-32.png",
+      "src": "https://api-homolog.cortezap.app.br/cdn/img/favicon-32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "https://api-homolog.cortezap.app.br/cdn/img/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "/favicon.png",
+      "src": "https://api-homolog.cortezap.app.br/cdn/img/favicon.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "maskable"
