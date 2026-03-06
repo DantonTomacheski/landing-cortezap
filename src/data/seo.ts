@@ -14,6 +14,7 @@ const _PAINEL =
 export const ABACATEPAY_LINK_ESSENCIAL = `${_PAINEL}/register?plan=essencial`;
 export const ABACATEPAY_LINK_PROFISSIONAL = `${_PAINEL}/register?plan=profissional`;
 export const ABACATEPAY_LINK_EMPRESARIAL = `${_PAINEL}/register?plan=empresarial`;
+export const ABACATEPAY_LINK_CUSTOM = `${_PAINEL}/register?plan=custom`;
 export const ABACATEPAY_LINK_BASICO = ABACATEPAY_LINK_ESSENCIAL;
 export const ABACATEPAY_LINK_DEFAULT = ABACATEPAY_LINK_PROFISSIONAL;
 
@@ -216,8 +217,8 @@ export const SOFTWARE_APPLICATION_SCHEMA = {
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "BRL",
-    lowPrice: "97.00",
-    highPrice: "297.00",
-    offerCount: 3,
+    lowPrice: "150.00",
+    highPrice: "350.00",
+    offerCount: 4,
   },
 };
