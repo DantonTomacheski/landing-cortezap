@@ -1,0 +1,187 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import BlogCard from "../../components/BlogCard.astro";
+import { BLOG_CLUSTERS } from "../../data/blogTaxonomy";
+import { createBreadcrumbSchema, toAbsoluteUrl } from "../../data/seo";
+
+export function getStaticPaths() {
+  return BLOG_CLUSTERS.map((cluster) => ({
+    params: { hub: cluster.hubSlug },
+    props: { cluster },
+  }));
+}
+
+const { cluster } = Astro.props;
+
+const allPosts = await getCollection("blog");
+const posts = allPosts
+  .filter((post) => post.data.cluster === cluster.id)
+  .sort(
+    (a, b) =>
+      new Date(b.data.updatedAt).getTime() -
+      new Date(a.data.updatedAt).getTime()
+  );
+
+const relatedHubs = BLOG_CLUSTERS.filter((item) => item.id !== cluster.id).slice(0, 3);
+
+const breadcrumbs = [
+  { name: "Início", path: "/" },
+  { name: "Blog", path: "/blog" },
+  { name: cluster.shortLabel, path: cluster.hubPath },
+];
+
+const structuredData = [
+  createBreadcrumbSchema(breadcrumbs),
+  {
+    "@type": "CollectionPage",
+    name: cluster.hubTitle,
+    description: cluster.hubDescription,
+    url: toAbsoluteUrl(cluster.hubPath),
+  },
+  {
+    "@type": "ItemList",
+    name: `${cluster.hubTitle} - artigos`,
+    itemListElement: posts.slice(0, 20).map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: post.data.title,
+      url: toAbsoluteUrl(`/blog/${post.id}`),
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={`${cluster.hubTitle} | Blog CorteZap`}
+  description={cluster.hubDescription}
+  canonicalPath={cluster.hubPath}
+  keywords={[
+    cluster.hubTitle,
+    cluster.shortLabel,
+    "blog cortezap",
+    "barbearia",
+    "gestao",
+  ]}
+  structuredData={structuredData}
+>
+  <Navbar />
+
+  <main>
+    <section class="relative overflow-hidden py-28 sm:py-36">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(249,115,22,0.18),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(251,191,36,0.08),transparent_28%)]"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <a
+          href="/blog"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-text-secondary transition-colors hover:text-white"
+        >
+          <span aria-hidden="true">&larr;</span>
+          Voltar para o blog
+        </a>
+
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <span class="rounded-full border border-brand-500/25 bg-brand-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-300">
+            {cluster.shortLabel}
+          </span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-text-secondary">
+            {posts.length} posts
+          </span>
+        </div>
+
+        <h1 class="mt-6 max-w-5xl text-4xl font-black tracking-tight text-white sm:text-6xl">
+          {cluster.heroTitle}
+        </h1>
+        <p class="mt-6 max-w-3xl text-lg leading-relaxed text-text-secondary">
+          {cluster.heroDescription}
+        </p>
+
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          {cluster.bestFor.map((item) => (
+            <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p class="text-sm leading-relaxed text-text-secondary">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20 border-y border-white/10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">Melhores páginas deste hub</h2>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-text-secondary">
+              Posts priorizados para essa intenção de busca, com foco em conversão, operação e densidade editorial.
+            </p>
+          </div>
+          <p class="text-sm text-text-muted">
+            Ação editorial atual: {cluster.auditAction} • Risco: {cluster.auditRisk}
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          {posts.slice(0, 6).map((post) => (
+            <BlogCard post={post} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div>
+            <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">Arquivo completo do hub</h2>
+            <div class="mt-8 grid gap-5 lg:grid-cols-2">
+              {posts.map((post) => (
+                <a
+                  href={`/blog/${post.id}`}
+                  class="group rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-brand-500/35 hover:bg-white/[0.04]"
+                >
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-300">
+                    {post.data.funnelStage}
+                  </p>
+                  <h3 class="mt-3 text-xl font-bold tracking-tight text-white transition-colors group-hover:text-brand-300">
+                    {post.data.title}
+                  </h3>
+                  <p class="mt-3 text-sm leading-relaxed text-text-secondary">{post.data.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <aside class="space-y-6">
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6">
+              <h2 class="text-lg font-bold text-white">Resumo editorial</h2>
+              <div class="mt-4 space-y-4 text-sm text-text-secondary">
+                <p><span class="font-semibold text-white">Hub:</span> {cluster.hubTitle}</p>
+                <p><span class="font-semibold text-white">Prioridade:</span> {cluster.publishPriority}</p>
+                <p><span class="font-semibold text-white">Ação de auditoria:</span> {cluster.auditAction}</p>
+                <p><span class="font-semibold text-white">Risco atual:</span> {cluster.auditRisk}</p>
+              </div>
+            </div>
+
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6">
+              <h2 class="text-lg font-bold text-white">Outros hubs</h2>
+              <div class="mt-4 space-y-4">
+                {relatedHubs.map((hubItem) => (
+                  <a
+                    href={hubItem.hubPath}
+                    class="block rounded-2xl border border-white/10 bg-white/[0.02] p-4 transition-colors hover:border-brand-500/35 hover:bg-white/[0.04]"
+                  >
+                    <p class="text-sm font-semibold text-white">{hubItem.hubTitle}</p>
+                    <p class="mt-2 text-xs leading-relaxed text-text-secondary">{hubItem.hubDescription}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

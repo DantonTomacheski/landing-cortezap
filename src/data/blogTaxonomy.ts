@@ -186,9 +186,15 @@ export const BLOG_CLUSTERS: BlogClusterMeta[] = [
   },
 ];
 
-const clusterById = new Map(BLOG_CLUSTERS.map((cluster) => [cluster.id, cluster]));
-const clusterByFolder = new Map(BLOG_CLUSTERS.map((cluster) => [cluster.folder, cluster]));
-const clusterByHubSlug = new Map(BLOG_CLUSTERS.map((cluster) => [cluster.hubSlug, cluster]));
+const clusterById: Map<string, BlogClusterMeta> = new Map(
+  BLOG_CLUSTERS.map((cluster) => [cluster.id, cluster])
+);
+const clusterByFolder: Map<string, BlogClusterMeta> = new Map(
+  BLOG_CLUSTERS.map((cluster) => [cluster.folder, cluster])
+);
+const clusterByHubSlug: Map<string, BlogClusterMeta> = new Map(
+  BLOG_CLUSTERS.map((cluster) => [cluster.hubSlug, cluster])
+);
 
 export function getBlogClusterById(clusterId: string) {
   return clusterById.get(clusterId);
