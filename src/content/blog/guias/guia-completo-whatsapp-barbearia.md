@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 12
 ctaTitle: "WhatsApp com bot de agendamento"
 ctaBody: "O CorteZap transforma seu WhatsApp num canal de agendamento 24h com API Oficial da Meta. Teste grátis por 7 dias."
@@ -43,7 +43,7 @@ faq:
   - question: "WhatsApp Web funciona para gerenciar a barbearia?"
     answer: "Para responder mensagens sim. Mas não substitui sistema — não gerencia agenda, não calcula comissão, não envia lembrete automático. É uma extensão do app, não uma ferramenta de gestão."
 internalLinks:
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
 ---

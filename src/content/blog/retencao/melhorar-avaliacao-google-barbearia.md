@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-12"
+updatedAt: "2026-02-27"
+reviewedAt: "2026-02-27"
 readingTime: 6
 ctaTitle: "Peça avaliações automaticamente"
 ctaBody: "O CorteZap envia pedido de avaliação no Google após cada atendimento. O cliente clica, avalia e pronto. Sem esquecer, sem constranger. Teste grátis."
@@ -43,7 +43,7 @@ faq:
   - question: "Avaliação falsa ajuda ou prejudica?"
     answer: "Prejudica. O Google detecta padrões de avaliações falsas e pode penalizar sua ficha, reduzindo a visibilidade. Além disso, clientes percebem avaliações genéricas e perdem confiança."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/seo-local-barbearia"
   - "/blog/retencao/experiencia-cliente-barbearia"
 ---

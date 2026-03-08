@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-10"
+updatedAt: "2026-02-09"
+reviewedAt: "2026-02-09"
 readingTime: 6
 ctaTitle: "Relatório por barbeiro, sem esforço"
 ctaBody: "O CorteZap mostra atendimentos, faturamento e comissão por barbeiro. Compare períodos e identifique quem está performando."
@@ -43,7 +43,7 @@ faq:
   - question: "Devo mostrar métricas de produtividade para os barbeiros?"
     answer: "Sim, com contexto. Mostrar os números sem explicação pode gerar competição tóxica. Mostrar com objetivo — 'onde podemos melhorar juntos' — gera motivação."
 internalLinks:
-  - "/blog/gestao/como-indicadores-desempenho-barbearia"
+  - "/blog/guias/indicadores-que-importam-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
   - "/blog/gestao/como-calcular-comissao-por-servico"
 ---

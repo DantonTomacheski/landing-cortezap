@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Agende clientes direto pelo WhatsApp"
 ctaBody: "O CorteZap integra com seu Google Business Profile. O cliente te encontra no Google, manda mensagem, e o bot agenda automaticamente."
@@ -44,13 +44,13 @@ faq:
     answer: "Sim. Adicione o link do WhatsApp Business na seção de contato ou como link de agendamento. Clientes clicam direto do Google e caem na conversa."
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
 ---
 
 Quando alguém pesquisa "barbearia perto de mim" no Google, três resultados aparecem no topo com mapa, fotos e avaliações. Esse bloco recebe mais cliques que todos os resultados orgânicos abaixo dele somados. Se sua barbearia não está ali, você está entregando clientes para o concorrente da esquina.
 
-O Google Business Profile (antigo Google Meu Negócio) é a ferramenta que controla essa presença. É gratuita, relativamente simples de configurar, e a maioria dos barbeiros ignora ou preenche pela metade. O resultado é um perfil fantasma, sem foto, sem horário atualizado, sem avaliação.
+O Google Business Profile (antigo Google Meu Negócio) é a ferramenta que controla essa presença. É gratuita, relativamente simples de configurar, e a maioria dos barbeiros ignora ou preenche pela metade. O resultado é um perfil fantasma, sem foto, sem horário atualizado, sem avaliação. Uma ficha otimizada atrai 5-7x mais cliques que uma ficha abandonada — e cliques se traduzem em ligações, mensagens no WhatsApp e agendamentos. Tudo gratuito, sem anúncio pago.
 
 Este guia cobre desde a criação da conta até as otimizações que separam quem aparece no topo de quem fica invisível. Sem teoria genérica de marketing digital, só o que funciona para barbearia.
 
@@ -139,11 +139,15 @@ O próprio Google Business Profile oferece métricas:
 - **Pesquisas usadas para encontrar você**: descubra quais termos estão trazendo clientes. Pode revelar oportunidades que você nem imaginava.
 - **Quantidade de avaliações novas por mês**: meta razoável é 4 a 8 por mês para uma barbearia média.
 - **Nota média**: acompanhe a evolução. Queda de 0.2 pontos já é sinal de alerta.
+- **Posição na busca local**: pesquise "barbearia" + seu bairro e veja onde aparece. Top 3 é o objetivo — é onde a maioria dos cliques acontece.
+- **Origem de novos clientes**: pergunte "Como nos achou?" Se "Google" está entre as respostas frequentes, a ficha está convertendo.
 
 ## Onde o CorteZap entra
 
 O Google Business Profile tem um botão de mensagem e um campo para link de agendamento. Com o CorteZap, esse link leva direto para o WhatsApp da barbearia, onde o bot assume. O cliente pesquisa no Google, clica em "Agendar", cai no WhatsApp, e o bot responde na hora — mesmo domingo à noite.
 
 Essa integração fecha um ciclo que normalmente tem furos: o cara encontra a barbearia no Google, manda mensagem, ninguém responde porque o barbeiro está atendendo, e ele vai para o próximo resultado. Com o bot ativo 24h, esse cliente não escapa.
+
+A integração entre Google Business Profile e CorteZap fecha um ciclo completo: o cliente descobre a barbearia no Google, agenda pelo WhatsApp, é atendido e recebe pedido de avaliação que alimenta a ficha. O ciclo se repete sem intervenção manual.
 
 O painel do CorteZap também mostra de onde vieram os agendamentos, o que ajuda a entender se o investimento de tempo no Google Business Profile está dando retorno concreto em clientes novos.

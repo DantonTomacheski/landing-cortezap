@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-12"
+updatedAt: "2026-02-06"
+reviewedAt: "2026-02-06"
 readingTime: 6
 ctaTitle: "Mensagens automáticas que funcionam"
 ctaBody: "O CorteZap envia mensagens automáticas em cada etapa do agendamento: boas-vindas, confirmação, lembrete e pós-atendimento. Configure uma vez e funciona para sempre."
@@ -43,7 +43,7 @@ faq:
   - question: "Mensagem automática funciona no WhatsApp Business comum?"
     answer: "O WhatsApp Business tem auto-resposta básica (saudação e ausência). Para mensagens contextuais como confirmação e lembrete, precisa de API ou sistema como o CorteZap."
 internalLinks:
-  - "/blog/comercial/lembrete-whatsapp-barbearia"
+  - "/blog/whatsapp/como-lembrete-automatico-barbearia"
   - "/blog/whatsapp/como-script-atendimento-whatsapp"
   - "/blog/whatsapp/como-automatizar-atendimento-barbearia"
 ---

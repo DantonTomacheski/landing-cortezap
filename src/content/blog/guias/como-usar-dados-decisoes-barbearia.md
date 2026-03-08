@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-02"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Dados reais, decisões melhores"
 ctaBody: "O painel do CorteZap transforma agendamentos em insights. Faturamento, ocupação, retenção — tudo em tempo real."
@@ -44,7 +44,7 @@ faq:
     answer: "Investigue antes de ignorar. Dados podem estar errados (coleta inconsistente) ou a intuição pode estar viciada. Verifique os dados, e se estiverem corretos, dê preferência a eles sobre a intuição."
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
 ---
 

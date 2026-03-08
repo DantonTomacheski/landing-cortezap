@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-14"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 6
 ctaTitle: "Reative clientes no automático"
 ctaBody: "O CorteZap identifica clientes inativos e envia sequência de reativação pelo WhatsApp. API Oficial, sem risco de banimento. Teste grátis."
@@ -44,7 +44,7 @@ faq:
     answer: "Não na primeira mensagem. Comece com contato pessoal. Se não responder, na segunda tente facilitar (ofereça horário específico). Só na terceira e última considere um incentivo leve."
 internalLinks:
   - "/blog/retencao/como-recuperar-clientes-parados"
-  - "/blog/retencao/campanha-retorno-barbearia"
+  - "/blog/retencao/como-recuperar-clientes-parados"
   - "/blog/retencao/marketing-whatsapp-barbearia"
 ---
 

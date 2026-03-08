@@ -19,9 +19,9 @@ funnelStage: "topo"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-18"
+updatedAt: "2026-02-26"
+reviewedAt: "2026-02-26"
 readingTime: 6
 ctaTitle: "Do WhatsApp Business para a API Oficial"
 ctaBody: "O CorteZap roda na API Oficial do WhatsApp Business. Tudo que o app faz, o sistema faz melhor — com agendamento automático, lembretes, fila de espera e sem risco de banimento."
@@ -43,7 +43,7 @@ faq:
   - question: "Quando devo migrar do WhatsApp Business app para API?"
     answer: "Quando o volume de mensagens superar 50 por dia, quando precisar de automação real (bot, lembretes) ou quando o risco de banimento for inaceitável."
 internalLinks:
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/whatsapp/como-automatizar-atendimento-barbearia"
 ---

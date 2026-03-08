@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-02"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Manaus já agendam pelo WhatsApp com bot. Teste sem cartão."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/retencao/captar-clientes-perto-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
 ---
 
 Manaus é a maior cidade da Amazônia e tem um mercado de barbearias com características únicas no Brasil. A cidade reúne mais de 2 milhões de habitantes, um polo industrial que emprega centenas de milhares de pessoas e um clima equatorial que mantém a demanda por corte de cabelo alta o ano inteiro. O calor constante de Manaus faz com que o público masculino corte cabelo com frequência superior à média nacional.

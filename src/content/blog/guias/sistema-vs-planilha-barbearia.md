@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Pronto para sair da planilha?"
 ctaBody: "O CorteZap automatiza agendamento, financeiro e comissões. Teste grátis por 7 dias e veja a diferença na prática."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Toda barbearia que cresce passa pelo mesmo dilema: continuar na planilha ou contratar um sistema. Os defensores de cada lado são apaixonados. O cara da planilha diz que faz tudo de graça e tem controle total. O cara do sistema diz que planilha é coisa do passado e atrasa a operação.

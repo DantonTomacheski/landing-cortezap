@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-05"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Ribeirão Preto já agendam pelo WhatsApp com bot. Teste sem cartão."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
 ---
 
 Ribeirão Preto é uma das cidades mais ricas do interior brasileiro. Capital do agronegócio no norte paulista, a cidade tem mais de 700 mil habitantes, renda per capita acima da média do estado de São Paulo e um público exigente com serviços. O mercado de barbearias reflete esse perfil: existem operações premium em bairros como Jardim Califórnia, Jardim Botânico e Alto da Boa Vista, e operações de volume nos bairros populares — mas em todos os segmentos o público espera profissionalismo.

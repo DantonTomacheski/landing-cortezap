@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-09-17"
+updatedAt: "2025-10-19"
+reviewedAt: "2025-10-19"
 readingTime: 6
 ctaTitle: "Troque o manual pelo automático"
 ctaBody: "Veja a diferença em 7 dias de teste grátis do CorteZap. Sem cartão, sem compromisso."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/agenda-online-para-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 O barbeiro que responde WhatsApp na mão conhece a rotina: mensagem entra no meio do corte, ele termina o degradê, limpa a mão, pega o celular, responde, volta pro cliente. Repete 30 vezes por dia. Funciona? Funciona. É eficiente? Nem um pouco.

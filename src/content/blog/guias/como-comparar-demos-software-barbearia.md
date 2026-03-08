@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-22"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Sem demo ensaiada. Teste real."
 ctaBody: "O CorteZap não faz demo bonita — oferece 7 dias grátis com sua operação real. Você avalia no dia a dia, não numa apresentação."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Agendar uma demo de software é como ir a um test drive de carro. O vendedor mostra o melhor ângulo, a estrada mais lisa e o ar-condicionado no máximo. Você sai da concessionária empolgado. Depois de 3 meses com o carro no trânsito da cidade, percebe que o consumo é alto, o banco é duro e a multimídia trava.

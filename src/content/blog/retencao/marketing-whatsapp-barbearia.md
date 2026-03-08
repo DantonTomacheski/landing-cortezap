@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-11"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 7
 ctaTitle: "WhatsApp profissional para sua barbearia"
 ctaBody: "O CorteZap usa a API Oficial da Meta para enviar mensagens sem risco de banimento. Agendamento, lembretes e campanhas em um só lugar. Teste grátis."
@@ -44,8 +44,8 @@ faq:
     answer: "Mensagens curtas com oferta pontual e um botão ou link direto para agendar. Texto longo com múltiplas ofertas tem taxa de conversão muito baixa."
 internalLinks:
   - "/blog/retencao/reativacao-clientes-whatsapp"
-  - "/blog/comercial/lembrete-whatsapp-barbearia"
-  - "/blog/retencao/campanha-retorno-barbearia"
+  - "/blog/whatsapp/como-lembrete-automatico-barbearia"
+  - "/blog/retencao/como-recuperar-clientes-parados"
 ---
 
 O WhatsApp é onde o cliente da barbearia está. Ele não abre e-mail promocional, não vê panfleto e provavelmente bloqueou as notificações do Instagram. Mas o WhatsApp ele lê — 98% das mensagens são abertas, a maioria em menos de 3 minutos.

@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-29"
+updatedAt: "2025-11-29"
+reviewedAt: "2025-11-29"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Sistema brasileiro para barbearia brasileira. Bot WhatsApp + gestão. Sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/cortezap-vs-square-appointments"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
 ---
 
 O Square Appointments é parte de um ecossistema americano de pagamentos e gestão. Agenda, maquininha, POS, relatórios — tudo integrado no ecossistema Square. Nos EUA, faz sentido. No Brasil, a aderência é outra história.

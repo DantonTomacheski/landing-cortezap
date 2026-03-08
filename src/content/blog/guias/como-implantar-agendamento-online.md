@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-27"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Implante agendamento online em 48h"
 ctaBody: "O CorteZap configura seu agendamento pelo WhatsApp em até 2 dias. Teste grátis por 7 dias, sem complicação."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
 ---
 
 Implantar agendamento online não é instalar um aplicativo e cruzar os braços. É mudar o fluxo operacional da barbearia inteira. E quando essa mudança é feita sem planejamento, o resultado é pior do que antes: agenda dupla (papel e digital), clientes confusos, barbeiros resistentes e o dono do negócio apagando incêndio.

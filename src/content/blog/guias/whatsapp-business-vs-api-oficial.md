@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "WhatsApp sem risco de banimento"
 ctaBody: "O CorteZap usa a API Oficial da Meta. Bot 24h, agendamento automático e zero chance de perder o número."
@@ -44,7 +44,7 @@ faq:
     answer: "Sim. A API Oficial exige verificação de empresa pela Meta (Facebook Business). MEI é aceito. O processo leva de 2 a 7 dias."
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
 ---
 

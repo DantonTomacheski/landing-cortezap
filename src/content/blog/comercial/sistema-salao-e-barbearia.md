@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-19"
+updatedAt: "2025-11-29"
+reviewedAt: "2025-11-29"
 readingTime: 6
 ctaTitle: "Sistema que serve para barbearia e salão"
 ctaBody: "Cadastre serviços de barbearia e salão no mesmo sistema. Teste o CorteZap por 7 dias."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/sistema-barbearia-multiplos-barbeiros"
-  - "/blog/comercial/software-para-barbearia"
+  - "/blog/comercial/como-escolher-software-barbearia"
 ---
 
 Muitos espaços hoje operam como barbearia e salão ao mesmo tempo. Tem barbeiro e cabeleireira no mesmo ambiente, com serviços que vão de degradê a coloração. O nome na fachada pode ser "barbearia", mas a operação é mista.

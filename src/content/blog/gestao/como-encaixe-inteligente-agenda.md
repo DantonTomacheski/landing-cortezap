@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-13"
+updatedAt: "2026-01-15"
+reviewedAt: "2026-01-15"
 readingTime: 6
 ctaTitle: "Agenda que mostra cada minuto livre"
 ctaBody: "O CorteZap calcula os horários com base na duração real de cada serviço. Você vê onde cabe um encaixe e onde não cabe."
@@ -42,7 +42,7 @@ faq:
     answer: "Funciona muito melhor com serviços rápidos (sobrancelha, barba rápida, acabamento). Encaixar uma progressiva de 90 minutos entre dois cortes é impossível. O serviço precisa caber no espaço disponível."
 internalLinks:
   - "/blog/gestao/como-configurar-intervalo-atendimentos"
-  - "/blog/gestao/como-recuperar-horario-vago-mesmo-dia"
+  - "/blog/retencao/preencher-horarios-vagos-barbearia"
   - "/blog/gestao/como-gerenciar-fila-espera"
 ---
 

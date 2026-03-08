@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-05"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Veja como barbearias em SP estão automatizando agendamentos via WhatsApp. Sem cartão, sem compromisso."
@@ -45,7 +45,7 @@ faq:
   - question: "Quanto custa um sistema de agendamento para barbearia em São Paulo?"
     answer: "O mercado varia de R$80 a R$500/mês. Sistemas com bot WhatsApp via API Oficial da Meta, como o CorteZap, ficam entre R$150 e R$350/mês dependendo do número de funcionalidades e instâncias."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
 ---

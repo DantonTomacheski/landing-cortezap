@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-19"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Avalie o CorteZap na prática"
 ctaBody: "7 dias grátis, sem cartão, sem compromisso. Teste com sua operação real e decida com dados."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 A cada mês surge um software novo prometendo revolucionar a gestão da sua barbearia. Instagram cheio de anúncio, demo bonita, lista de funcionalidades que não acaba. Você testa um, não gosta, testa outro, cancela, e depois de 6 meses e R$900 gastos em assinaturas desperdiçadas, volta para o caderninho.

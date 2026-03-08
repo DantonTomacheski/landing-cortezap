@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-15"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 7
 ctaTitle: "Agendamento que aparece no Google"
 ctaBody: "O CorteZap cria link de agendamento para sua ficha do Google e site. O cliente busca, encontra e agenda. Sem anúncio, sem custo extra. Teste grátis."
@@ -43,7 +43,7 @@ faq:
   - question: "Posso fazer SEO local sozinho?"
     answer: "Sim. Para barbearia, o básico é suficiente: ficha completa no Google, avaliações constantes e informações consistentes em todos os canais. Não precisa de agência para isso."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/melhorar-avaliacao-google-barbearia"
   - "/blog/retencao/captar-clientes-perto-barbearia"
 ---

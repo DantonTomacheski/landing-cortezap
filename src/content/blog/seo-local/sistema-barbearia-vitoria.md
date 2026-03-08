@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-05"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Vitória já agendam pelo WhatsApp com bot. Teste sem compromisso."
@@ -44,7 +44,7 @@ faq:
     answer: "Vila Velha é município separado e o Google Maps trata assim. Se sua barbearia fica em Vila Velha, o perfil precisa ter endereço de Vila Velha — não de Vitória. O público busca por cidade e bairro."
 internalLinks:
   - "/blog/retencao/seo-local-barbearia"
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
 ---
 

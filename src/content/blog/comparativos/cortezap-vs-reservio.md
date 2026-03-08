@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-21"
+updatedAt: "2025-12-14"
+reviewedAt: "2025-12-14"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp + gestão de barbearia. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/alternativa-ao-reservio"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
 ---
 
 Reservio é uma plataforma de booking com calendário online e páginas públicas de agendamento. Interface limpa, fácil de configurar, funciona para vários tipos de negócio. O cliente acessa a página, escolhe o serviço, o horário, e agenda.

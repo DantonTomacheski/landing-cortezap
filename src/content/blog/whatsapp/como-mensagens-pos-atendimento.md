@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-13"
+updatedAt: "2026-02-02"
+reviewedAt: "2026-02-02"
 readingTime: 5
 ctaTitle: "Pós-atendimento automático que fideliza"
 ctaBody: "O CorteZap envia mensagens de pós-atendimento automaticamente: agradecimento, pedido de avaliação e sugestão de próximo agendamento. Tudo no WhatsApp, sem esforço manual."
@@ -44,7 +44,7 @@ faq:
     answer: "Sim. O sistema configura automaticamente mensagens de agradecimento e pode incluir link para avaliação e sugestão de próximo agendamento."
 internalLinks:
   - "/blog/whatsapp/como-mensagens-automaticas-barbearia"
-  - "/blog/comercial/lembrete-whatsapp-barbearia"
+  - "/blog/whatsapp/como-lembrete-automatico-barbearia"
   - "/blog/whatsapp/como-script-atendimento-whatsapp"
 ---
 

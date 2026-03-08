@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 8
 ctaTitle: "Operando em 48 horas"
 ctaBody: "O onboarding do CorteZap configura sua barbearia em até 2 dias. Suporte acompanha cada etapa."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
 ---
 
 O barbeiro decide contratar o sistema na segunda-feira. Preenche formulário, recebe e-mail de boas-vindas e começa a configurar. Na quarta, ainda está cadastrando serviços porque a interface tem 15 campos por serviço e nenhum é autoexplicativo. Na sexta, marca uma call com o suporte para entender como ativar o WhatsApp. Na segunda seguinte, o bot finalmente funciona. Foram 7 dias para algo que deveria levar 2.

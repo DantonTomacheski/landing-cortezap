@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-02"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Ainda tem dúvidas? Fale com a gente"
 ctaBody: "O time do CorteZap responde pelo WhatsApp. Pergunte o que quiser antes de testar. Sem compromisso, sem pressão de vendas."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
 ---
 
 Antes de contratar qualquer coisa, a cabeça enche de perguntas. E na hora de perguntar ao vendedor, bate aquele receio de parecer leigo ou de receber resposta enviesada. O vendedor quer vender — é o trabalho dele. Então as respostas tendem a ser otimistas demais.

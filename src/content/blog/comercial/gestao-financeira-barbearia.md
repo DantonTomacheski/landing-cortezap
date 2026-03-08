@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-02"
+updatedAt: "2025-10-28"
+reviewedAt: "2025-10-28"
 readingTime: 6
 ctaTitle: "Financeiro no piloto automático"
 ctaBody: "O CorteZap registra faturamento e comissão automaticamente. Teste 7 dias grátis."
@@ -42,7 +42,6 @@ faq:
     answer: "Sim, para questões fiscais e tributárias. Mas o controle operacional do dia a dia (faturamento, comissão, fluxo de caixa) é responsabilidade do dono e pode ser automatizado com sistema."
 internalLinks:
   - "/blog/comercial/relatorio-financeiro-barbearia"
-  - "/blog/comercial/controle-financeiro-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
 ---
 
@@ -68,10 +67,13 @@ Outro erro é controlar receita sem controlar despesa. Saber que faturou R$15.00
 
 O terceiro erro é não separar o pró-labore. O dono retira dinheiro da barbearia para gastos pessoais ao longo do mês, sem registrar. No final, o lucro "desapareceu" — na verdade, foi consumido sem controle.
 
+E o erro mais destruidor: gastar o faturamento bruto como se fosse lucro. A barbearia faturou R$20.000 no mês. O dono gasta R$18.000 se sentindo rico. Mas R$12.000 eram custos (aluguel, produtos, comissão, energia). O lucro real era R$8.000, e ele gastou R$18.000. Está se endividando sem perceber.
+
 ## O que funciona na prática
 
 O controle financeiro mínimo para barbearia precisa de:
 
+- **Separe as contas**: abra uma conta digital gratuita só para a barbearia. Todo Pix de cliente cai ali. Todo pagamento de despesa da barbearia sai dali. Seu pró-labore é uma transferência fixa mensal dessa conta para sua conta pessoal. Sem separação, nenhum relatório é confiável. Se a barbearia crescer e precisar formalizar (MEI, ME), o contador vai pedir registros financeiros — se não existem, a formalização vira um caos de retroatividade.
 - **Registro de todo faturamento por serviço**: saber que corte gerou R$8.000 e barba gerou R$3.000 no mês indica onde está a receita.
 - **Faturamento por barbeiro**: quem produziu mais, quem produziu menos. Informação para decisões de equipe.
 - **Custos fixos mapeados**: aluguel, energia, internet, sistema, produtos. Deveria ser uma lista simples que não muda muito mês a mês.

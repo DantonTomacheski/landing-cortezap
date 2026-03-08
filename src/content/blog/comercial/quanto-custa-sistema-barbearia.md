@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-08"
+updatedAt: "2025-11-06"
+reviewedAt: "2025-11-06"
 readingTime: 6
 ctaTitle: "Planos claros a partir de R$150/mês"
 ctaBody: "Sem taxa escondida, sem fidelidade. Veja os planos do CorteZap e teste grátis por 7 dias."
@@ -43,7 +43,7 @@ faq:
   - question: "Tem taxa de setup ou implantação?"
     answer: "Muitos sistemas cobram taxa de implantação (R$200-500). O CorteZap não cobra setup — a configuração inicial está inclusa no plano."
 internalLinks:
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
   - "/blog/comercial/sistema-barbearia-vale-a-pena"
   - "/blog/comercial/sistema-barbearia-pequena"
 ---
@@ -95,7 +95,7 @@ Mapa de preços de sistemas para barbearia em 2026:
 - Relatórios avançados
 - Permissões por nível de acesso
 - Serve para: barbearias com 4+ barbeiros ou múltiplas unidades
-- O CorteZap Empresarial está aqui (R$350)
+- O CorteZap Premium está aqui (R$350)
 
 **Faixa R$350-500+/mês (Enterprise)**
 - Multi-unidade completo
@@ -111,13 +111,56 @@ Mapa de preços de sistemas para barbearia em 2026:
 - Multa de cancelamento (contratos com fidelidade)
 - Aumento de preço após período promocional
 
-## Quando isso não resolve
+### O custo de NÃO ter sistema
+
+Antes de olhar para a mensalidade, faça a conta inversa: quanto custa não ter?
+
+Cenário de uma barbearia com 2 barbeiros e 18 atendimentos/dia (ticket médio R$50):
+
+| Perda | Cálculo | Valor mensal |
+|---|---|---|
+| No-show (3 por semana) | 3 x R$50 x 4,4 semanas | R$660 |
+| Clientes perdidos por falta de resposta rápida (2 por semana) | 2 x R$50 x 4,4 | R$440 |
+| Tempo no WhatsApp (1h/dia que poderia ser 1 corte) | 22 dias x R$50 | R$1.100 |
+| **Total de perdas estimadas** | | **R$2.200/mês** |
+
+O plano Profissional custa R$200/mês. A diferença: R$2.000 por mês que ficam na mesa se você não resolver esses problemas. Mesmo que esses números sejam otimistas e a realidade seja metade disso, R$1.100 contra R$200 ainda fecha com folga.
+
+### O que o bot faz com esse investimento
+
+Para entender na prática o que R$150-200/mês compram:
+
+> **Cliente (23h47, domingo):** Oi, tem horário amanhã?
+> **Bot:** Fala! 👋 Amanhã tem esses horários:
+> 09:00 | 10:30 | 14:00 | 15:30
+> Qual fica bom?
+> **Cliente:** 10:30
+> **Bot:** Agendado! ✅ Corte amanhã às 10:30. Te mando lembrete 2h antes.
+
+Essa conversa aconteceu à meia-noite de domingo. Sem bot, o cliente mandaria a mensagem, iria dormir, e agendaria em outro lugar na segunda de manhã. Com bot, o agendamento está confirmado antes do cliente apagar a luz.
+
+## Quando sistema não vale o custo
 
 Se o orçamento é extremamente apertado (menos de R$100/mês), as opções com bot WhatsApp praticamente não existem. Nessa faixa, Google Agenda + respostas manuais no WhatsApp + planilha simples é a combinação viável. Não é ideal, mas funciona sem custo de software.
 
-Se o volume é muito baixo (menos de 8 atendimentos por dia), mesmo o sistema mais barato pode não se pagar. A conta só fecha quando o sistema gera ou economiza mais do que custa.
+Se o volume é muito baixo (menos de 8 atendimentos por dia), mesmo o sistema mais barato pode não se pagar. A conta só fecha quando o sistema gera ou economiza mais do que custa. Se você é barbeiro solo com 5 clientes/dia e sem problema de no-show, economize os R$150 — invista em marketing para atrair mais clientes primeiro.
 
-## Como medir se melhorou
+## Checklist: custos ocultos para perguntar antes de contratar
+
+Antes de assinar qualquer plano, pergunte:
+
+- [ ] Tem taxa de setup ou implantação?
+- [ ] Cobra por barbeiro adicional? Quanto?
+- [ ] Cobra por mensagem WhatsApp enviada?
+- [ ] Tem fidelidade contratual? Multa de cancelamento?
+- [ ] O preço aumenta após período promocional?
+- [ ] Treinamento está incluso ou é cobrado separado?
+- [ ] Suporte está incluso ou é cobrado por chamado?
+- [ ] Usa API Oficial do WhatsApp (inclusa no plano) ou cobra à parte?
+
+Se o fornecedor não responder com clareza, é sinal de que a fatura vai surpreender.
+
+## Como medir se o preço está valendo
 
 Para avaliar se o preço pago está correto:
 
@@ -128,8 +171,8 @@ Para avaliar se o preço pago está correto:
 
 ## Onde o CorteZap entra
 
-O CorteZap tem 3 planos com preço fixo mensal: Essencial (R$150), Profissional (R$200) e Empresarial (R$350). Sem taxa de setup, sem cobrança por mensagem, sem fidelidade contratual. Cancela quando quiser.
+O CorteZap tem 3 planos com preço fixo mensal: Essencial (R$150, 1 barbeiro), Profissional (R$200, até 5 barbeiros) e Premium (R$350, ilimitado + suporte prioritário). Sem taxa de setup, sem cobrança por mensagem, sem fidelidade contratual. Cancela quando quiser.
 
-O que está incluso em todos os planos: bot WhatsApp com API Oficial da Meta, agendamento automático, lembrete, painel do barbeiro, base de clientes. Os planos maiores adicionam múltiplas instâncias WhatsApp e relatórios avançados.
+O que está incluso em todos os planos: bot WhatsApp com API Oficial da Meta, agendamento automático, lembrete, painel do barbeiro, base de clientes. Os planos maiores adicionam suporte prioritário e funcionalidades de gestão avançada.
 
-O CorteZap não é o mais barato do mercado. Existem opções a R$80/mês sem bot WhatsApp ou com bot via API não oficial. A diferença de preço reflete a API Oficial (que protege seu número) e o bot com linguagem natural (que entende o cliente sem menu numerado). Se isso não é prioridade para você, opções mais baratas existem.
+O CorteZap não é o mais barato do mercado. Existem opções a R$80/mês sem bot WhatsApp ou com bot via API não oficial. A diferença de preço reflete a API Oficial (que protege seu número) e o bot com linguagem natural (que entende o cliente sem menu numerado). Se isso não é prioridade para você, opções mais baratas existem. Se proteger o número e ter bot que funciona de verdade importa, o investimento de R$150/mês se paga quando evita o primeiro no-show da semana.

@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-19"
+updatedAt: "2025-12-16"
+reviewedAt: "2025-12-16"
 readingTime: 6
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp + gestão feita para barbearias brasileiras. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/alternativa-ao-fresha"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
 ---
 
 Fresha é uma das maiores plataformas de booking do mundo. Marketplace, gestão, pagamentos, ponto de venda — tudo integrado. E tem plano gratuito. Isso chama atenção de qualquer barbeiro que está pesquisando sistemas.

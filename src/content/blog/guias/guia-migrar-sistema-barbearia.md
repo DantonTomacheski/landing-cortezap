@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Migração assistida pelo suporte"
 ctaBody: "O CorteZap ajuda a importar seus dados e configurar tudo nos primeiros dias. Sem custo extra de migração."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Migrar de sistema é o equivalente digital de mudar de casa. Você sabe que a nova é melhor, mas embalar tudo, transportar e desembalar dá trabalho. E no meio da mudança, a vida não para — os clientes continuam agendando, os barbeiros continuam atendendo, e a barbearia precisa funcionar sem interrupção.

@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 8
 ctaTitle: "Sem contrato. Sem multa. Sem desculpa."
 ctaBody: "O CorteZap não prende ninguém. Plano mensal, cancela quando quiser. A qualidade do sistema é o que te mantém, não o contrato."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 "Assinatura de 12 meses com desconto de 40%." A oferta parece boa até você precisar cancelar no terceiro mês. A multa é de 50% do restante do contrato. Você paga R$1.000 para sair de algo que custava R$200/mês. O desconto virou prejuízo.

@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-18"
+updatedAt: "2026-02-04"
+reviewedAt: "2026-02-04"
 readingTime: 5
 ctaTitle: "Notificações que mantêm tudo em ordem"
 ctaBody: "O CorteZap envia notificações pelo WhatsApp para clientes e barbeiros em cada evento relevante: novo agendamento, cancelamento, mudança de horário e mais. Tudo automático."
@@ -43,7 +43,7 @@ faq:
   - question: "Notificações funcionam para campanhas de marketing?"
     answer: "Podem, mas com cautela. Notificação promocional não solicitada é spam. Use notificações transacionais (agendamento, confirmação, mudança) e reserve promoções para quem autorizou receber."
 internalLinks:
-  - "/blog/comercial/lembrete-whatsapp-barbearia"
+  - "/blog/whatsapp/como-lembrete-automatico-barbearia"
   - "/blog/whatsapp/como-mensagens-automaticas-barbearia"
   - "/blog/whatsapp/como-confirmar-agendamento-whatsapp"
 ---

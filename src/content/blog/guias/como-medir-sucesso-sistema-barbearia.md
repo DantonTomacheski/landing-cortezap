@@ -19,9 +19,9 @@ funnelStage: "retention"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-28"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Meça os resultados na prática"
 ctaBody: "O painel do CorteZap mostra seus indicadores em tempo real. Teste grátis por 7 dias e comece a medir."
@@ -43,7 +43,7 @@ faq:
   - question: "Devo medir todo dia?"
     answer: "Diariamente, só olhe faturamento e ocupação (1 minuto). Semanalmente, revise no-show e agendamentos online (5 minutos). Mensalmente, faça análise completa dos 5 indicadores (15 minutos)."
 internalLinks:
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
 ---

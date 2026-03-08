@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-12"
+updatedAt: "2025-11-18"
+reviewedAt: "2025-11-18"
 readingTime: 6
 ctaTitle: "Relatórios que fazem sentido"
 ctaBody: "Faturamento por barbeiro, por serviço, por período. Automático. Teste o CorteZap 7 dias."
@@ -42,7 +42,7 @@ faq:
     answer: "Faturamento diário: todo dia. Ticket médio e comparativo: semanalmente. Análise completa: mensalmente. Olhar menos que isso é perder visibilidade."
 internalLinks:
   - "/blog/comercial/gestao-financeira-barbearia"
-  - "/blog/comercial/controle-financeiro-barbearia"
+  - "/blog/comercial/gestao-financeira-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
 ---
 

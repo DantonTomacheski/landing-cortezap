@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-21"
+updatedAt: "2025-11-06"
+reviewedAt: "2025-11-06"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Custo fixo previsível. Bot WhatsApp + gestão completa. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/cortezap-vs-fresha"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
 ---
 
 O Fresha atrai pelo plano gratuito. Agendamento, gestão básica, sem mensalidade. Para quem está começando ou quer testar sem risco financeiro, é uma porta de entrada lógica. O problema aparece quando a operação cresce e as limitações se tornam gargalos.

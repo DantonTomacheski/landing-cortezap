@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-24"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Goiânia já automatizam agendamentos via WhatsApp. Teste grátis."
@@ -47,7 +47,7 @@ faq:
 internalLinks:
   - "/blog/retencao/captar-clientes-perto-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
 ---
 
 Goiânia é uma das capitais que mais cresce no setor de barbearias. A cidade combina expansão urbana acelerada, público jovem com poder de compra crescente e uma cultura de cuidado masculino que se consolidou nos últimos anos. Setores como Bueno, Marista e Oeste concentram barbearias premium, enquanto bairros como Jardim América, Campinas e Novo Mundo mantêm operações de alto volume com ticket mais acessível.

@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-06"
+updatedAt: "2026-02-04"
+reviewedAt: "2026-02-04"
 readingTime: 7
 ctaTitle: "Atendimento padronizado começa no agendamento"
 ctaBody: "O CorteZap padroniza a primeira etapa: o agendamento. Todo cliente recebe a mesma experiência no WhatsApp, com confirmação e lembrete."
@@ -41,7 +41,7 @@ faq:
   - question: "Padronização funciona em barbearia com barbeiros parceiros?"
     answer: "Funciona, mas precisa de acordo. O barbeiro parceiro tem mais autonomia, então o padrão precisa ser negociado e fazer sentido para ele. Foque nos pontos que impactam a experiência do cliente e a reputação da barbearia."
 internalLinks:
-  - "/blog/gestao/como-treinar-equipe-sistema"
+  - "/blog/guias/treinar-equipe-sistema-barbearia"
   - "/blog/gestao/como-historico-atendimento-cliente"
   - "/blog/comercial/melhor-sistema-para-barbearia"
 ---

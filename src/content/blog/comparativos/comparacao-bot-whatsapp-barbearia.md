@@ -20,9 +20,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-03"
+updatedAt: "2025-11-20"
+reviewedAt: "2025-11-20"
 readingTime: 7
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp com API Oficial da Meta. Sem risco de banimento. Teste sem cartão."
@@ -45,8 +45,8 @@ faq:
     answer: "Sim, é possível migrar seu número do WhatsApp Business comum para a API Oficial. O CorteZap auxilia nesse processo durante a configuração."
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
 ---
 
 No Brasil, "sistema para barbearia com WhatsApp" virou critério de compra. O problema é que "com WhatsApp" significa coisas muito diferentes dependendo do sistema. Desde notificação por WhatsApp até bot conversacional com API Oficial da Meta. A diferença entre esses extremos é a diferença entre um lembrete e uma recepcionista virtual 24 horas.

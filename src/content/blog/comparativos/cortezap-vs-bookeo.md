@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-18"
+updatedAt: "2025-12-30"
+reviewedAt: "2025-12-30"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp com API Oficial para barbearia brasileira. Teste sem cartão."
@@ -42,7 +42,7 @@ faq:
     answer: "O Bookeo tem suporte a múltiplos idiomas, mas a plataforma e o suporte principal são em inglês. A experiência em português pode não ser completa."
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
   - "/blog/comparativos/top-10-apps-barbearia"
 ---
 

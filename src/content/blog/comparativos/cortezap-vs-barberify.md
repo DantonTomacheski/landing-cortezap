@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-12"
+updatedAt: "2025-12-05"
+reviewedAt: "2025-12-05"
 readingTime: 6
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Veja como o bot WhatsApp agenda automaticamente para sua barbearia. Sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
   - "/blog/comparativos/alternativa-ao-barberify"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
 ---
 
 Barberify e CorteZap são dois sistemas feitos para barbearias. Não para salões genéricos, não para clínicas de estética. Barbearias. Isso já filtra a conversa: ambos entendem o fluxo de cadeira, serviço rápido e comissão por barbeiro.

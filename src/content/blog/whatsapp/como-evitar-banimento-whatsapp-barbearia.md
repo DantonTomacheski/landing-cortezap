@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-27"
+updatedAt: "2026-01-28"
+reviewedAt: "2026-01-28"
 readingTime: 6
 ctaTitle: "Automação sem medo de perder o número"
 ctaBody: "O CorteZap usa exclusivamente a API Oficial da Meta. Seu número é registrado, verificado e protegido. Zero risco de banimento, zero preocupação."
@@ -44,7 +44,7 @@ faq:
     answer: "O WhatsApp Business app não suporta bots nativamente. Bots que funcionam 'por cima' do app usam conexões não-oficiais e têm risco alto de banimento."
 internalLinks:
   - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
-  - "/blog/comercial/whatsapp-oficial-barbearia"
+  - "/blog/whatsapp/como-api-oficial-whatsapp-barbearia"
   - "/blog/whatsapp/como-whatsapp-business-barbearia"
 ---
 

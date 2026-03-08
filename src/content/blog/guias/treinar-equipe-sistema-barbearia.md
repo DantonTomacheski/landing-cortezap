@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Onboarding guiado pelo suporte"
 ctaBody: "O CorteZap acompanha a implantação nos primeiros dias. Suporte humano para treinar você e sua equipe sem dor de cabeça."
@@ -81,6 +81,11 @@ Não chegue com o sistema pronto e anuncie "a partir de agora usamos isso". Incl
 - Avise com 1-2 semanas de antecedência que a barbearia vai implantar um sistema
 - Explique o porquê com honestidade: "estamos perdendo clientes porque não respondemos WhatsApp a tempo" ou "a comissão fica errada todo mês"
 - Pergunte quais são as dores deles. O barbeiro que reclama de "agenda confusa" ou "não sei quanto vou receber de comissão" vai ver o sistema como solução, não como imposição
+- Lembre que barbeiro muitas vezes tem mentalidade de autônomo mesmo sendo funcionário. Qualquer coisa que pareça controle excessivo gera desconforto. Apresente o sistema como ferramenta que ajuda o barbeiro (saber quanto vai ganhar de comissão, por exemplo), não como mecanismo de vigilância.
+
+### Etapa 1.5 — Conecte o sistema à comissão
+
+Se o barbeiro precisa registrar atendimento no sistema para receber comissão, ele vai usar. Não é punição — é processo. "Sua comissão é calculada pelo sistema. Se o atendimento não está lá, não entra no cálculo." Essa é a alavanca mais eficiente para garantir adesão.
 
 ### Etapa 2 — Treine em sessões curtas e práticas
 
@@ -144,6 +149,8 @@ Se o sistema escolhido é realmente complicado demais para o perfil da equipe, o
 - **Percentual da equipe usando o sistema diariamente após 30 dias**: meta mínima de 80%.
 - **Registros de atendimento no sistema vs. atendimentos reais**: se coincidem, a adoção é real.
 - **Dúvidas recorrentes caíram?** Menos perguntas sobre o sistema indica que a equipe internalizou o uso.
+- **Tempo até autonomia**: quantos dias levou até o barbeiro parar de perguntar como faz? Se passou de 2 semanas e ele ainda precisa de ajuda constante, o treinamento ou o sistema precisam de ajuste.
+- **Redução de erros de agenda**: menos conflitos de horário, menos clientes marcados errado. Se esses números caem, o sistema está funcionando na prática.
 - **Satisfação da equipe com o sistema**: pergunte diretamente depois de 30 dias. "O sistema facilita ou complica seu dia?"
 - **Ninguém voltou ao papel?** Se a agenda de papel desapareceu da bancada, missão cumprida.
 
@@ -152,5 +159,7 @@ Se o sistema escolhido é realmente complicado demais para o perfil da equipe, o
 O CorteZap foi projetado para que o barbeiro use sem precisar de treinamento extenso. O painel mobile mostra a agenda do dia em uma tela. Confirmar atendimento é um toque. Ver comissão é outro toque.
 
 Nos primeiros dias após a implantação, o suporte do CorteZap está disponível para tirar dúvidas da equipe — não só do dono. Se o barbeiro travou em algo, manda mensagem para o suporte e resolve. Isso funciona como a sessão de treinamento individual que o dono nem sempre tem tempo de fazer.
+
+Para o dono, o painel tem visão completa: todos os barbeiros, todos os atendimentos, relatórios de comissão. O barbeiro vê só o que é dele — agenda do dia, próximos clientes, serviço agendado e status. Cada um vê o que precisa, sem excesso de informação.
 
 O onboarding guiado nos primeiros 7 dias inclui: configuração dos perfis de cada barbeiro, demonstração do fluxo básico e acompanhamento da adoção. Se alguém da equipe não está usando, o suporte avisa o dono com sugestão de ação.

@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-25"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Automatize os processos que consomem tempo"
 ctaBody: "O CorteZap automatiza agendamento, lembrete e controle financeiro. Processos que antes eram manuais passam a rodar sozinhos."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Todo dono de barbearia conhece a sensação: chega no final do dia exausto, não por ter cortado cabelo demais, mas por ter resolvido problemas que não deveriam existir. O cliente que foi agendado no horário errado. O barbeiro que não sabia que o produto acabou. A comissão que não bateu e virou discussão. O WhatsApp com 40 mensagens esperando resposta.

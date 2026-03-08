@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Troque o caderninho por agendamento automático"
 ctaBody: "O CorteZap agenda pelo WhatsApp, envia lembrete e atualiza a agenda em tempo real. Teste 7 dias grátis."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 O caderninho de papel tem sua beleza. Está ali, na bancada, não precisa de internet, não precisa de senha, não trava. O barbeiro abre na página do dia, vê os horários anotados à caneta e sabe o que tem pela frente. Gerações de barbeiros trabalharam assim e fizeram dinheiro.

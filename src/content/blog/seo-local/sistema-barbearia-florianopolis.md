@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-22"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Floripa já automatizam agendamentos via WhatsApp. Teste sem cartão."
@@ -44,7 +44,7 @@ faq:
   - question: "Como uma barbearia em Floripa aparece nas buscas locais?"
     answer: "Google Perfil da Empresa com endereço verificado, fotos e avaliações. Floripa tem bairros distantes entre si — o Maps posiciona a barbearia para buscas no raio certo. Perfis com 15+ avaliações se destacam na maioria dos bairros."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
   - "/blog/retencao/seo-local-barbearia"
 ---

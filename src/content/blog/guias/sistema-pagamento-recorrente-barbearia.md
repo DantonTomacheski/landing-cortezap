@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-08"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 8
 ctaTitle: "Planos transparentes, sem surpresa"
 ctaBody: "O CorteZap cobra mensalidade fixa de R$150 a R$350. Sem taxa de setup, sem custo por mensagem, sem fidelidade."
@@ -44,7 +44,7 @@ faq:
     answer: "Vale se você já testou por pelo menos 2 meses e está satisfeito. O desconto (geralmente 15-30%) compensa, mas só após validação. Não assine anual sem ter testado."
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
 ---
 

@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-10"
+updatedAt: "2026-01-06"
+reviewedAt: "2026-01-06"
 readingTime: 7
 ctaTitle: "Automação completa pelo WhatsApp"
 ctaBody: "O CorteZap automatiza agendamento, confirmação, lembrete e respostas frequentes — tudo no WhatsApp. O barbeiro foca no que sabe fazer: cortar cabelo."
@@ -44,7 +44,7 @@ faq:
     answer: "Sim, e na verdade essa é a abordagem mais inteligente. Automatize o que é repetitivo e mantenha controle humano sobre exceções e situações delicadas."
 internalLinks:
   - "/blog/comercial/bot-whatsapp-barbearia"
-  - "/blog/whatsapp/como-assistente-virtual-barbearia"
+  - "/blog/whatsapp/como-ia-responder-clientes-barbearia"
   - "/blog/whatsapp/como-mensagens-automaticas-barbearia"
 ---
 

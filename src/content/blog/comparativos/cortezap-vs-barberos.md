@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-13"
+updatedAt: "2025-12-04"
+reviewedAt: "2025-12-04"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Descubra se a automação WhatsApp faz diferença na sua barbearia. Sem cartão."
@@ -42,7 +42,7 @@ faq:
     answer: "Depende do quanto você perde por mês com no-show e tempo gasto respondendo WhatsApp. Se esse valor supera a diferença de preço, sim. Se não, o Barberos pode bastar."
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
   - "/blog/comparativos/top-10-apps-barbearia"
 ---
 

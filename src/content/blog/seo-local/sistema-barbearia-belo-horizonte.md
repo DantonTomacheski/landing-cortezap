@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-13"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em BH já automatizam agendamentos pelo WhatsApp. Teste sem compromisso."
@@ -43,7 +43,7 @@ faq:
   - question: "Barbearia pequena em BH precisa de sistema?"
     answer: "Se você trabalha sozinho e atende menos de 8 clientes por dia sem perder horários, talvez não. Mas se perde mais de 2 agendamentos por semana por demora no WhatsApp ou no-show, o lembrete automático e o bot já se pagam."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/seo-local-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
 ---

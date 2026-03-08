@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-24"
+updatedAt: "2025-12-05"
+reviewedAt: "2025-12-05"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Sistema feito para barbearia, com bot WhatsApp. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/cortezap-vs-setmore"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
 ---
 
 O Setmore é uma boa ferramenta de agendamento online. Booking page, lembretes, integrações com Google Calendar. É genérica — funciona para consultórios, personal trainers, salões, barbearias, qualquer coisa. E tem plano gratuito.

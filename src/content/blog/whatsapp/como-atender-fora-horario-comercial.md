@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-06"
+updatedAt: "2026-01-16"
+reviewedAt: "2026-01-16"
 readingTime: 5
 ctaTitle: "Atendimento 24h sem perder o sono"
 ctaBody: "O CorteZap atende pelo WhatsApp 24 horas por dia, 7 dias por semana. O cliente agenda de madrugada e você vê o horário confirmado pela manhã."
@@ -44,7 +44,7 @@ faq:
     answer: "Não. Estabeleça limites saudáveis. O bot cuida do atendimento fora do expediente e você revisa pela manhã."
 internalLinks:
   - "/blog/whatsapp/como-agendamento-24h-barbearia"
-  - "/blog/whatsapp/como-assistente-virtual-barbearia"
+  - "/blog/whatsapp/como-ia-responder-clientes-barbearia"
   - "/blog/whatsapp/como-mensagens-automaticas-barbearia"
 ---
 

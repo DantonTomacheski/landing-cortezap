@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-09"
+updatedAt: "2026-03-01"
+reviewedAt: "2026-03-01"
 readingTime: 5
 ctaTitle: "Sábado lotado com agendamento online"
 ctaBody: "O CorteZap preenche os horários de sábado com agendamento 24h pelo WhatsApp. Lista de espera automática para horários concorridos. Teste grátis."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/retencao/como-lotar-agenda-barbearia"
   - "/blog/retencao/preencher-horarios-vagos-barbearia"
-  - "/blog/retencao/cobranca-sinal-evitar-faltas"
+  - "/blog/gestao/como-cobrar-sinal-sem-afastar-cliente"
 ---
 
 Sábado é o dia mais lucrativo da barbearia e o mais desperdiçado. Lucrativo porque a demanda é alta — todo mundo quer cortar no sábado. Desperdiçado porque muita barbearia não gerencia esse dia com a atenção que ele merece.

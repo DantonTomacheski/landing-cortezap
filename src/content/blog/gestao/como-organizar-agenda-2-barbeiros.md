@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-06"
+updatedAt: "2026-02-13"
+reviewedAt: "2026-02-13"
 readingTime: 6
 ctaTitle: "Agenda separada por barbeiro, sem confusão"
 ctaBody: "No CorteZap, cada barbeiro tem sua agenda individual. O cliente escolhe o profissional e o horário aparece certo. Sem conflito."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/gestao/como-evitar-conflito-agenda-barbeiros"
   - "/blog/gestao/como-escalar-barbeiros-agenda"
-  - "/blog/gestao/como-agenda-compartilhada-barbeiros"
+  - "/blog/gestao/como-evitar-conflito-agenda-barbeiros"
 ---
 
 A barbearia começou com uma cadeira. Deu certo, veio o segundo barbeiro. E aí começa o problema: dois profissionais, uma agenda só, e clientes sendo marcados no mesmo horário sem ninguém perceber até a hora do atendimento. Quem já viveu isso sabe que o constrangimento é grande e o cliente não volta.

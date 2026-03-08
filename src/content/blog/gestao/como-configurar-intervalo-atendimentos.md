@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-05"
+updatedAt: "2026-01-02"
+reviewedAt: "2026-01-02"
 readingTime: 6
 ctaTitle: "Intervalos automáticos entre atendimentos"
 ctaBody: "No CorteZap, você define a duração de cada serviço e o intervalo entre atendimentos. A agenda calcula os horários sozinha."
@@ -44,7 +44,7 @@ faq:
     answer: "Pode funcionar no curto prazo, mas gera atrasos frequentes e cansaço. Mesmo 5 minutos de buffer entre atendimentos evita efeito cascata quando um corte demora um pouco mais."
 internalLinks:
   - "/blog/gestao/como-evitar-conflito-agenda-barbeiros"
-  - "/blog/gestao/como-lidar-cliente-atrasado"
+  - "/blog/gestao/como-controlar-atrasos-barbearia"
   - "/blog/gestao/como-encaixe-inteligente-agenda"
 ---
 

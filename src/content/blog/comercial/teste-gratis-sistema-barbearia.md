@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-10-20"
+updatedAt: "2025-11-11"
+reviewedAt: "2025-11-11"
 readingTime: 5
 ctaTitle: "7 dias grátis. Sem cartão."
 ctaBody: "Teste o CorteZap com sua operação real. Se não gostar, cancela sem custo."
@@ -76,9 +76,10 @@ Roteiro de 7 dias para teste grátis eficiente:
 
 **Dia 1-2: Configuração completa**
 - Cadastre TODOS os seus serviços com preço e duração corretos
-- Configure horários de cada barbeiro
+- Configure horários de cada barbeiro (incluindo pausas e folgas)
 - Ative o bot no WhatsApp
 - Mande mensagem de teste para verificar se o fluxo funciona
+- Teste o reagendamento e o cancelamento
 
 **Dia 3-4: Teste com clientes reais**
 - Direcione os próximos clientes que mandarem WhatsApp para o bot
@@ -97,13 +98,57 @@ Roteiro de 7 dias para teste grátis eficiente:
 - Some tudo e compare com o custo do plano mensal
 - Se positivo: contrata. Se negativo: cancela. Se incerto: peça mais alguns dias ao suporte.
 
-## Quando isso não resolve
+### Como a primeira conversa com o bot parece para o cliente
+
+No dia 3, quando você direcionar os primeiros clientes para o bot, eles vão ter uma experiência assim:
+
+> **Cliente:** Oi, quero marcar horário
+> **Bot:** Fala! 👋 Qual serviço você quer?
+> 1. Corte (R$50)
+> 2. Barba (R$35)
+> 3. Corte + Barba (R$70)
+> **Cliente:** Corte
+> **Bot:** Beleza! Amanhã tem esses horários:
+> 09:00 | 10:30 | 14:00 | 16:30
+> Qual fica bom?
+> **Cliente:** 10:30
+> **Bot:** Agendado! ✅ Corte amanhã às 10:30. Valor: R$50. Te mando um lembrete 2h antes. Precisando reagendar, é só chamar aqui.
+
+Observe a reação do cliente. Se ele agendou sem pedir ajuda, o bot funciona. Se ele travou em algum ponto ou mandou "quero falar com alguém", anote — pode ser ajuste de configuração ou limitação do bot.
+
+### A planilha do teste grátis
+
+Antes de começar, anote esses números da sua operação atual (a baseline):
+
+| Indicador | Semana antes do teste | Semana com o sistema |
+|---|---|---|
+| No-shows | ___ | ___ |
+| Minutos/dia no WhatsApp | ___ | ___ |
+| Agendamentos fora do horário | 0 | ___ |
+| Agendamentos pelo bot (sem intervenção) | 0 | ___ |
+| Agendamentos manuais | ___ | ___ |
+
+No dia 7, compare as colunas. Se a coluna da direita é melhor em pelo menos 2 indicadores, o sistema está fazendo diferença.
+
+### A conta do dia 7
+
+Exemplo com números conservadores (barbearia com 2 barbeiros, ticket médio R$50):
+
+- Agendamentos automáticos fora do horário: 6 na semana x R$50 = R$300
+- No-shows evitados pelo lembrete: 2 na semana x R$50 = R$100
+- Projeção mensal de ganho: R$400/semana x 4,4 = R$1.760
+
+Custo do plano Profissional: R$200/mês. Mesmo que a projeção seja otimista e o ganho real seja metade (R$880), o ROI ainda é de 340%.
+
+## Quando o teste grátis NÃO resolve a dúvida
 
 Se o teste grátis dura 3 dias ou menos, é insuficiente para medir impacto real. Evite sistemas com teste muito curto — são projetados para você não ter tempo de avaliar.
 
 Se o teste exige configuração complexa que leva dias (integração com ERP, cadastro de 500 produtos), 7 dias não bastam para chegar à fase de testes com clientes. Nesse caso, o sistema é complexo demais para uma barbearia.
 
-## Como medir se melhorou
+Se você tem menos de 5 clientes por dia, 7 dias podem não gerar dados suficientes para decidir. Mas nesse caso, o problema provavelmente não é falta de sistema — é falta de demanda.
+
+## Como decidir ao final do teste
 
 Ao final do teste, responda com dados (não com sensação):
 
@@ -111,10 +156,12 @@ Ao final do teste, responda com dados (não com sensação):
 - **Algum agendamento aconteceu fora do horário comercial?** Se sim, é receita nova que não existiria sem o sistema.
 - **Você gastou menos tempo no WhatsApp?** Compare com a semana anterior.
 - **A equipe gostou?** Se o barbeiro disse "prefiro o caderninho", a adoção vai ser difícil.
-- **O custo mensal é menor que os ganhos medidos?** Se sim, contrata. Simples.
+- **O custo mensal (R$150-350) é menor que os ganhos medidos?** Se sim, contrata.
 
 ## Onde o CorteZap entra
 
 O CorteZap oferece 7 dias de teste grátis sem cartão de crédito. Todas as funcionalidades do plano escolhido estão disponíveis. Não existe versão "lite" de teste — você testa exatamente o que vai usar.
 
-A configuração leva menos de 1 hora. Bot WhatsApp com API Oficial funcionando no mesmo dia. Se em 7 dias o sistema não mostrou valor, cancela sem custo, sem email de pressão, sem ligação de retenção. Se mostrou, escolhe entre os planos de R$150, R$200 ou R$350/mês. Decisão baseada em dados, não em pressão comercial.
+A configuração leva menos de 1 hora. Bot WhatsApp com API Oficial funcionando no mesmo dia. Se em 7 dias o sistema não mostrou valor, cancela sem custo, sem email de pressão, sem ligação de retenção.
+
+Os planos depois do teste: Essencial R$150/mês (1 barbeiro), Profissional R$200/mês (até 5 barbeiros), Premium R$350/mês (ilimitado + suporte prioritário). Sem taxa de setup, sem fidelidade. Compare com o custo do que você perde sem sistema: 4 no-shows por mês a R$50 = R$200 — o plano mais básico se paga com 3 faltas evitadas. Decisão baseada em dados, não em pressão comercial.

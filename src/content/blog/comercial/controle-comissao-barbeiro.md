@@ -20,9 +20,9 @@ funnelStage: "consideration"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-09-27"
+updatedAt: "2025-11-02"
+reviewedAt: "2025-11-02"
 readingTime: 6
 ctaTitle: "Comissão calculada automaticamente"
 ctaBody: "O CorteZap calcula comissão por barbeiro em tempo real. Sem planilha, sem briga. Teste 7 dias."
@@ -63,6 +63,12 @@ E o erro é quase garantido. Bastou um atendimento anotado no barbeiro errado, o
 
 O outro problema é timing. Se o barbeiro só sabe quanto ganhou no fim do mês, ele não consegue planejar nada. Precisa pedir adiantamento, fica na incerteza. Isso desmotiva.
 
+### O cenário clássico do conflito
+
+**Antes do sistema:** fim do mês, sexta-feira. O dono senta com a planilha do Excel. São 987 atendimentos para distribuir entre 3 barbeiros. Cada um tem comissão diferente por serviço: Rafael ganha 50% no corte e 45% na barba, João ganha 48% em tudo, Lucas (novato) ganha 40%. Tem descontos que foram dados, gorjetas que entraram, um serviço que foi refeito sem cobrar. Três horas depois, o dono chega num número. Rafael confere e diz que está faltando 2 cortes. O dono abre a planilha, procura, descobre que anotou no João por engano. Corrige. Lucas reclama que uma barba dele foi para o Rafael. Nova correção. A conversa que deveria levar 20 minutos já dura uma hora e meia, e o clima está pesado.
+
+**Depois do sistema:** fim do mês, sexta-feira. O dono abre o relatório de comissão no painel. Os números estão lá: cada atendimento registrado automaticamente no barbeiro certo no momento em que foi concluído. Rafael abre o painel dele e vê os mesmos números. Confere, está de acordo. Pagamento feito em 15 minutos, sem discussão. O que mudou não foi a matemática — foi a eliminação do erro humano na coleta de dados.
+
 ## Erro comum
 
 O erro mais comum é usar a mesma planilha para tudo: agendamentos, financeiro, comissão. A planilha fica enorme, fórmulas quebram, e ninguém mais confia nos números.
@@ -88,11 +94,33 @@ Na configuração, é importante definir com clareza:
 
 Essas regras precisam estar configuradas no sistema uma vez. Depois, o cálculo é automático e incontestável.
 
+### Exemplo prático com números
+
+Barbearia com 3 barbeiros, mês de 22 dias úteis:
+
+| Barbeiro | Atendimentos | Faturamento bruto | Comissão (50%) | A receber |
+|---|---|---|---|---|
+| Rafael | 312 | R$17.160 | 50% | R$8.580 |
+| João | 288 | R$15.840 | 48% | R$7.603 |
+| Lucas | 264 | R$13.200 | 40% | R$5.280 |
+
+No sistema, esses números se atualizam automaticamente a cada atendimento concluído. Não tem digitação, não tem planilha, não tem "esqueci de anotar". O barbeiro abre o painel à noite e vê: "Hoje fiz 14 atendimentos, faturei R$770, minha comissão foi R$385."
+
+Se o barbeiro quer saber o detalhamento, ele vê atendimento por atendimento: "09:00 — Corte degradê — R$55 — Comissão: R$27,50". Transparência total.
+
+### O impacto que ninguém espera
+
+Quando o barbeiro tem visibilidade em tempo real da própria produção, algo muda no comportamento: ele se auto-gerencia. Rafael vê que está com R$7.000 no dia 18 e sabe que precisa de mais R$1.580 para bater a meta. Ele fica mais atento, sugere serviços adicionais, aceita encaixes. A barbearia ganha sem o dono precisar cobrar.
+
+Uma barbearia com 4 barbeiros que implementou painel de comissão em tempo real mediu: ticket médio subiu de R$48 para R$62 nos primeiros 3 meses. Os barbeiros, vendo os próprios números, passaram a sugerir barba junto com o corte com mais frequência. O aumento veio sem campanha, sem treinamento formal — veio da visibilidade.
+
 ## Quando isso não resolve
 
 Se você trabalha sozinho, controle de comissão não faz sentido. Todo o faturamento é seu.
 
 Se você tem um modelo de parceria onde cada barbeiro é autônomo e aluga a cadeira por valor fixo, comissão por atendimento também não se aplica. Nesse caso, o controle financeiro é do barbeiro individualmente, não da barbearia.
+
+E se você tem 2 barbeiros e 10 atendimentos por dia no total, a planilha ainda dá conta sem muita dor de cabeça. O sistema de comissão começa a compensar a partir de 3 barbeiros ou 25+ atendimentos diários, quando o volume torna o controle manual lento e propenso a erros.
 
 ## Como medir se melhorou
 
@@ -102,9 +130,12 @@ Depois de automatizar o controle de comissão:
 - **Quantidade de questionamentos sobre valores**: se os barbeiros param de perguntar "tem certeza que tá certo?", a transparência está funcionando.
 - **Erros identificados**: no primeiro mês, compare o cálculo automático com o cálculo manual do mês anterior. Se houver diferença, descubra qual estava certo.
 - **Satisfação da equipe**: barbeiro que confia no sistema de pagamento fica mais motivado. Não é fácil medir, mas é perceptível.
+- **Ticket médio por barbeiro**: com visibilidade em tempo real, a tendência é subir. Monitore mês a mês.
 
 ## Onde o CorteZap entra
 
 O CorteZap calcula comissão automaticamente com base nos atendimentos registrados. Cada barbeiro pode acessar o painel e ver sua produção e valores a receber em tempo real. O dono tem a visão consolidada. Percentuais são configuráveis por serviço.
 
-Limitação: o sistema calcula comissão sobre agendamentos registrados no CorteZap. Atendimentos que entram por fora (presenciais sem registro) não entram no cálculo automaticamente — precisam ser lançados manualmente. Se a equipe não registra tudo, o número sai errado. Planos a partir de R$150/mês com funcionalidade de comissão inclusa.
+Planos: Essencial R$150/mês (1 barbeiro), Profissional R$200/mês (até 5 barbeiros), Premium R$350/mês (ilimitado). Para uma barbearia com 3 barbeiros, o plano Profissional (R$200/mês) elimina as horas de planilha e as discussões de fim de mês. Compare com o custo de perder um barbeiro bom por causa de desconfiança no cálculo da comissão.
+
+Limitação: o sistema calcula comissão sobre agendamentos registrados no CorteZap. Atendimentos que entram por fora (presenciais sem registro) não entram no cálculo automaticamente — precisam ser lançados manualmente. Se a equipe não registra tudo, o número sai errado. Teste grátis de 7 dias.

@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-24"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 11
 ctaTitle: "Sistema que cresce com você"
 ctaBody: "O CorteZap tem planos do Essencial ao Empresarial. Escale sem trocar de sistema."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Escalar barbearia não é só abrir mais unidades. É fazer o negócio crescer em faturamento, clientes e eficiência sem que a qualidade caia e sem que o dono entre em colapso. E a maioria das barbearias que tenta escalar sem sistema volta atrás, porque a gestão manual que funcionava com 2 cadeiras simplesmente desmorona com 5.

@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-08"
+updatedAt: "2025-12-02"
+reviewedAt: "2025-12-02"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp com API Oficial + gestão completa. Teste sem cartão."
@@ -42,8 +42,8 @@ faq:
     answer: "O BarberCloud foca mais em presença online (site + agenda) do que em gestão profunda. Para financeiro detalhado e comissões, compare as funcionalidades específicas de cada plano."
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
 ---
 
 BarberCloud aposta na presença online: site para barbearia com agenda integrada. A ideia é que o cliente encontre sua barbearia na internet, veja os serviços e agende direto na página.

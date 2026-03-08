@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-19"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "O CorteZap passa no checklist"
 ctaBody: "Teste grátis por 7 dias. WhatsApp oficial, sem fidelidade, suporte humano. Veja se encaixa na sua operação."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Contratar sistema de barbearia parece simples: escolhe, paga, usa. Mas na prática, a maioria dos barbeiros descobre problemas depois de contratar — funcionalidade que falta, custo escondido, suporte que não responde. E aí começa o ciclo de trocar de sistema a cada 3 meses.

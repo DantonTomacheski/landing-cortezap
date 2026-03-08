@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-23"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Fortaleza já agendam pelo WhatsApp com bot. Teste sem compromisso."
@@ -43,7 +43,7 @@ faq:
   - question: "Barbearia na periferia de Fortaleza se beneficia de sistema?"
     answer: "Sim. Bairros como Messejana, Mondubim e Barra do Ceará têm população densa e quase nenhuma barbearia com presença digital. Perfil no Google Maps com WhatsApp automatizado captura clientes sem custo de anúncio."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/seo-local-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
 ---

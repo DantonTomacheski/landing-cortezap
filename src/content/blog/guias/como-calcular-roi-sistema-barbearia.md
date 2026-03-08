@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-22"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Calcule o ROI na prática"
 ctaBody: "Teste o CorteZap por 7 dias grátis e meça os resultados reais na sua barbearia. Sem achismo, sem projeção — dados reais."
@@ -69,6 +69,8 @@ O primeiro erro é considerar apenas a economia de tempo como retorno. Tempo eco
 Segundo erro: ignorar o retorno em receita protegida. O sistema não "gera" receita nova diretamente. Ele protege receita que seria perdida (no-show, cliente que não agendou por falta de resposta). Essa receita protegida é tão real quanto receita nova, mas muitos barbeiros não a contabilizam.
 
 Terceiro: calcular ROI no primeiro dia. Sistema precisa de pelo menos 30 dias para mostrar resultado. No primeiro dia, o ROI é negativo porque você pagou e ainda não colheu. Avalie com horizonte de 90 dias.
+
+Quarto: comparar meses com sazonalidade diferente. "Contratei o sistema em dezembro e em janeiro o faturamento caiu." Janeiro cai com ou sem sistema. Compare janeiro com sistema vs. janeiro do ano anterior sem sistema.
 
 ## O que funciona na prática
 
@@ -150,6 +152,8 @@ ROI negativo no primeiro mês pode ser normal (curva de adoção). ROI negativo 
 
 ## Quando isso não resolve
 
+Se a barbearia fatura menos de R$3.000/mês, o custo do sistema (R$150-350) representa 5-12% do faturamento. Nessa faixa, qualquer gasto fixo pesa. É mais prudente investir em crescimento primeiro.
+
 Se a barbearia está em fase muito inicial (abriu há 2 meses, ainda sem clientela formada), calcular ROI é prematuro. O foco deveria ser atrair clientes, não otimizar processos. Sistema nessa fase pode ser custo sem retorno.
 
 Se o barbeiro trabalha sozinho com 5-6 clientes por dia e está satisfeito com esse volume, o retorno do sistema será baixo porque não há muito o que recuperar. O custo pode não se justificar.
@@ -161,6 +165,7 @@ E se o problema da barbearia é serviço, não processo, nenhum ROI de sistema v
 - **ROI está acima de 200% depois de 90 dias?** Se sim, o sistema é um bom investimento.
 - **Payback aconteceu no primeiro mês?** Se o retorno do primeiro mês cobriu o custo, é excelente.
 - **Você consegue identificar de onde vem o retorno?** Se sabe que "recuperei R$500 de no-show e R$300 de agendamentos noturnos", o cálculo está claro.
+- **Cancelamentos com reaproveitamento**: cliente cancelou, horário foi ocupado por outro. Sem sistema, esse horário seria perdido. Cada reaproveitamento é receita protegida.
 - **Os indicadores base estão melhorando?** No-show caindo, agendamentos subindo, tempo admin diminuindo. Se a tendência é positiva, o ROI vai continuar crescendo.
 
 ## Onde o CorteZap entra

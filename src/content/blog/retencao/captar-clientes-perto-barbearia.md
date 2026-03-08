@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-20"
+updatedAt: "2026-02-25"
+reviewedAt: "2026-02-25"
 readingTime: 6
 ctaTitle: "Apareça para quem está perto"
 ctaBody: "O CorteZap integra com Google Business Profile para captar clientes da região. Agendamento direto pelo WhatsApp, sem barreira. Teste grátis."
@@ -43,7 +43,7 @@ faq:
   - question: "Devo investir em anúncio segmentado por região?"
     answer: "Se tiver orçamento, Instagram Ads com segmentação por raio de 5 km ao redor da barbearia é a melhor opção. Budget mínimo de R$300/mês para gerar resultados mensuráveis."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/seo-local-barbearia"
   - "/blog/retencao/programa-indicacao-barbearia"
 ---
@@ -72,7 +72,7 @@ O terceiro é não cuidar da fachada. Muita barbearia tem Instagram impecável m
 
 ## O que funciona na prática
 
-- **Google Business Profile otimizado.** É o canal de captação local mais eficiente que existe. Ficha completa, fotos recentes, avaliações ativas. Detalhamos isso no [guia de Google Business Profile](/blog/google-business-profile-barbearia).
+- **Google Business Profile otimizado.** É o canal de captação local mais eficiente que existe. Ficha completa, fotos recentes, avaliações ativas. Detalhamos isso no [guia de Google Business Profile](/blog/guias/guia-google-business-profile-barbearia).
 - **Instagram Ads com raio de 5 km.** Anúncio segmentado por localização, gênero masculino, 18-45 anos. Orçamento de R$10-15/dia. CTA direto para WhatsApp.
 - **Parcerias com comércios vizinhos.** Academia, loja de suplementos, estúdio de tatuagem, loja de roupa masculina. Troca de cartões, desconto cruzado, indicação mútua.
 - **Fachada que comunica.** Placa visível, horário de funcionamento exposto, QR code para agendar. A fachada é seu anúncio 24h.

@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-10"
+updatedAt: "2025-11-27"
+reviewedAt: "2025-11-27"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Gestão + bot WhatsApp com API Oficial. Teste sem cartão, sem compromisso."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
   - "/blog/comparativos/alternativa-ao-barberify"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
 ---
 
 Barbercode é um sistema de gestão para barbearias com foco em caixa, agendamento e comissões. Foi construído para quem quer controle financeiro detalhado da operação: saber quanto entrou, quanto cada barbeiro gerou, quanto pagar de comissão.

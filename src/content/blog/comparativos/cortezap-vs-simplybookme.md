@@ -19,9 +19,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-22"
+updatedAt: "2026-01-02"
+reviewedAt: "2026-01-02"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Sistema feito para barbearia, não para qualquer negócio. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comparativos/alternativa-ao-simplybookme"
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/melhores-sistemas-agendamento-barbearia"
+  - "/blog/comercial/melhor-sistema-para-barbearia"
 ---
 
 SimplyBook.me é uma plataforma de booking que atende qualquer segmento. Médicos, personal trainers, consultores, salões, barbearias — a ferramenta é genérica por design. Página de agendamento, lembretes, pagamentos, integrações.

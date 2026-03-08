@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-03-05"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Recife já agendam pelo WhatsApp com bot. Teste sem compromisso."
@@ -43,7 +43,7 @@ faq:
   - question: "Barbearia na periferia de Recife precisa de sistema?"
     answer: "Sim, e o retorno é rápido. Bairros como Ibura, Jordão e Cohab têm volume alto de público e pouquíssima concorrência digital. Aparecer no Google Maps com WhatsApp automatizado gera clientes sem custo de anúncio."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/retencao/captar-clientes-perto-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
 ---

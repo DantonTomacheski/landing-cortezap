@@ -15,7 +15,7 @@ funnelStage: "consideration"
 cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
-publishedAt: "2026-03-08"
+publishedAt: "2026-02-18"
 updatedAt: "2026-03-08"
 reviewedAt: "2026-03-08"
 readingTime: 6

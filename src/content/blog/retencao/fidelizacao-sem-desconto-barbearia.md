@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-01"
+updatedAt: "2026-03-02"
+reviewedAt: "2026-03-02"
 readingTime: 6
 ctaTitle: "Fidelize pela experiência, não pelo preço"
 ctaBody: "O CorteZap ajuda a criar processos de fidelização que não dependem de desconto: lembretes, follow-up, preferências salvas. Teste grátis."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/retencao/como-fidelizar-clientes-barbearia"
   - "/blog/retencao/experiencia-cliente-barbearia"
-  - "/blog/retencao/retencao-clientes-barbearia"
+  - "/blog/retencao/como-fidelizar-clientes-barbearia"
 ---
 
 O reflexo de todo barbeiro quando quer fidelizar é criar promoção. "Corte pela metade na segunda visita." "Toda terça, 20% off." "Cartão fidelidade: 10 cortes, 1 grátis." O desconto vira muleta — e a barbearia entra num ciclo onde o preço cheio parece injusto para o cliente e insustentável para o dono.

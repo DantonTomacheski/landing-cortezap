@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 10
 ctaTitle: "Veja seus indicadores em tempo real"
 ctaBody: "O painel do CorteZap mostra faturamento, ocupação, no-show e mais. Decisão baseada em dados, não em achismo."
@@ -44,7 +44,7 @@ faq:
     answer: "Entre 70% e 85% é saudável. Abaixo de 60%, a cadeira está parada demais. Acima de 90%, você não tem folga para encaixes e emergências, e provavelmente está recusando gente."
 internalLinks:
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
   - "/blog/comercial/controle-comissao-barbeiro"
 ---
 
@@ -104,6 +104,8 @@ Dos clientes atendidos no mês passado, quantos voltaram neste mês? É o indica
 
 ### Indicadores complementares (adicione quando os 5 básicos estiverem estáveis)
 
+- **Comissão sobre faturamento**: quanto do faturamento vai para comissão. Se passa de 50%, a margem do dono está comprometida.
+- **Clientes novos vs. recorrentes**: proporção de clientes na primeira visita. Se todo mês metade é novo, a retenção está baixa — você está enchendo um balde furado.
 - **Atendimentos por barbeiro**: identifica quem está sobrecarregado e quem está ocioso
 - **Receita por metro quadrado**: útil se você está considerando mudar de espaço
 - **Custo de aquisição de cliente (CAC)**: quanto gasta em marketing para cada cliente novo que entra
@@ -120,6 +122,8 @@ Não precisa de reunião formal toda semana. O que funciona:
 
 ## Quando isso não resolve
 
+Indicadores mostram o quê, não o porquê. A ocupação caiu 20%? O indicador mostra a queda, mas não explica se foi por concorrência nova, barbeiro que saiu, ou sazonalidade. O dono precisa interpretar e investigar. Número sem contexto é só número.
+
 Indicadores não resolvem problemas que precisam de intuição de mercado. Se o bairro está passando por mudança demográfica, se um concorrente forte abriu na esquina, se a moda de estilo de corte mudou — os números vão mostrar o efeito, mas a solução exige análise qualitativa.
 
 Também não resolve se a coleta de dados é inconsistente. Se metade dos atendimentos não são registrados no sistema, os indicadores estão errados e podem levar a decisões piores do que o achismo.
@@ -133,6 +137,7 @@ E em barbearias muito pequenas (1 cadeira, 8-10 clientes por dia), o volume de d
 - **Os indicadores estão melhorando mês a mês?** Não todos de uma vez, mas pelo menos 2 dos 5 mostrando tendência positiva.
 - **A equipe sabe os números?** Se o barbeiro conhece sua taxa de ocupação e seu ticket médio, ele se autorregula.
 - **Você identifica problemas antes que virem crise?** Taxa de no-show subiu 5% esse mês — ação agora, antes de virar 15%.
+- **Reação rápida a quedas**: se um indicador cai e o dono age na semana seguinte (em vez de no mês seguinte), os indicadores estão encurtando o tempo de reação.
 
 ## Onde o CorteZap entra
 

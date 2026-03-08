@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-19"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Curitiba já agendam pelo WhatsApp 24h. Teste sem compromisso."
@@ -43,7 +43,7 @@ faq:
   - question: "O frio de Curitiba afeta o agendamento de barbearia?"
     answer: "Sim. Em dias muito frios, o no-show sobe. Lembrete automático por WhatsApp 2 horas antes do horário reduz o impacto porque o cliente cancela a tempo e o horário pode ser reaproveitado."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/retencao/captar-clientes-perto-barbearia"
 ---

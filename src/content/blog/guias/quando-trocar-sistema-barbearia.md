@@ -20,8 +20,8 @@ cluster: "autoridade"
 clusterLabel: "Guias e Autoridade"
 hub: "/blog/guias-sistema-barbearia"
 publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 9
 ctaTitle: "Hora de trocar? Teste o CorteZap"
 ctaBody: "Sem fidelidade, sem setup. Migre com suporte dedicado e teste grátis por 7 dias."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/como-escolher-software-barbearia"
-  - "/blog/comercial/roi-sistema-barbearia"
+  - "/blog/guias/como-calcular-roi-sistema-barbearia"
 ---
 
 Trocar de sistema é uma dor que todo mundo quer evitar. Já passou pelo trauma de configurar, treinar a equipe, avisar os clientes. A ideia de fazer tudo de novo é desanimadora. Então você convive com um sistema que não atende, reclama todo mês, mas não age.

@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-09-26"
+updatedAt: "2025-10-26"
+reviewedAt: "2025-10-26"
 readingTime: 6
 ctaTitle: "Controle total da agenda em uma tela"
 ctaBody: "Veja todos os agendamentos organizados no painel do CorteZap. Teste 7 dias grátis."
@@ -43,7 +43,7 @@ faq:
 internalLinks:
   - "/blog/comercial/agenda-online-para-barbearia"
   - "/blog/comercial/agendamento-automatico-barbearia"
-  - "/blog/comercial/agenda-digital-barbearia"
+  - "/blog/comercial/agenda-online-para-barbearia"
 ---
 
 O caderninho de agendamento é o símbolo da barbearia tradicional. Funciona. Funciona há décadas. O barbeiro abre na página do dia, vê os nomes escritos à mão, e sabe o que tem pela frente. Simples, tangível, sem internet.

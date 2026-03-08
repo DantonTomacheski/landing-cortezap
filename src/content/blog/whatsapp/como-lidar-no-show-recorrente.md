@@ -21,9 +21,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-06"
+updatedAt: "2026-02-19"
+reviewedAt: "2026-02-19"
 readingTime: 7
 ctaTitle: "Controle de no-show com dados reais"
 ctaBody: "O CorteZap registra o histórico de presença de cada cliente. Você vê quem falta, quantas vezes e pode aplicar políticas diferenciadas — tudo automático, sem constrangimento."
@@ -48,7 +48,7 @@ faq:
 internalLinks:
   - "/blog/comercial/reduzir-no-show-barbearia"
   - "/blog/whatsapp/como-cobrar-sinal-whatsapp"
-  - "/blog/whatsapp/como-confirmar-presenca-whatsapp"
+  - "/blog/whatsapp/como-confirmar-agendamento-whatsapp"
 ---
 
 Todo barbeiro tem aquele cliente. Marca toda semana, falta uma sim e outra também, nunca avisa e quando reaparece age como se nada tivesse acontecido. Esse perfil sozinho pode representar R$300 a R$500 de prejuízo por mês — sem contar o desgaste emocional.

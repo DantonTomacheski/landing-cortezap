@@ -19,9 +19,9 @@ funnelStage: "meio"
 cluster: "operacao-whatsapp"
 clusterLabel: "WhatsApp e Automação"
 hub: "/blog/whatsapp-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-11"
+updatedAt: "2025-12-31"
+reviewedAt: "2025-12-31"
 readingTime: 6
 ctaTitle: "Bot que conversa de verdade"
 ctaBody: "O CorteZap usa linguagem natural para conversar com seus clientes. Nada de menu 1-2-3. O cliente escreve como quiser e o bot entende e responde como gente."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/bot-whatsapp-barbearia"
   - "/blog/whatsapp/como-ia-responder-clientes-barbearia"
-  - "/blog/whatsapp/como-assistente-virtual-barbearia"
+  - "/blog/whatsapp/como-ia-responder-clientes-barbearia"
 ---
 
 "Digite 1 para agendar. Digite 2 para preços. Digite 3 para falar com atendente." O cliente digita "quero cortar cabelo amanhã" e o bot responde "opção inválida". É frustrante, é antiquado e é o motivo pelo qual muita gente odeia chatbot.

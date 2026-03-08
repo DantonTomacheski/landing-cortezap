@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-17"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias em Cuiabá já agendam pelo WhatsApp com bot. Teste sem cartão."
@@ -43,7 +43,7 @@ faq:
   - question: "Várzea Grande tem mercado para barbearia com sistema?"
     answer: "Sim. Várzea Grande tem mais de 280 mil habitantes e é conurbada com Cuiabá. A presença digital de barbearias na cidade é mínima. Sistema com WhatsApp automatizado gera vantagem imediata."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
 ---

@@ -21,9 +21,9 @@ funnelStage: "consideration"
 cluster: "seo-local"
 clusterLabel: "SEO Local"
 hub: "/blog/seo-local-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-14"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 5
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Barbearias no DF já agendam pelo WhatsApp 24h com bot. Teste sem compromisso."
@@ -43,7 +43,7 @@ faq:
   - question: "Barbearias em Taguatinga e Ceilândia precisam de sistema?"
     answer: "Sim, e o retorno tende a ser rápido. Essas regiões têm volume alto de público e concorrência digital ainda baixa. Aparecer no Google Maps e ter WhatsApp automatizado é vantagem competitiva real."
 internalLinks:
-  - "/blog/retencao/google-business-profile-barbearia"
+  - "/blog/guias/guia-google-business-profile-barbearia"
   - "/blog/comercial/agendamento-whatsapp-barbearia"
   - "/blog/retencao/seo-local-barbearia"
 ---

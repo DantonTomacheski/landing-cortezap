@@ -19,9 +19,9 @@ funnelStage: "consideration"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-02-14"
+updatedAt: "2026-03-08"
+reviewedAt: "2026-03-08"
 readingTime: 6
 ctaTitle: "Remarketing automático pelo WhatsApp"
 ctaBody: "O CorteZap reimpacta clientes com mensagens segmentadas pelo WhatsApp. Lembretes, campanhas e ofertas — tudo no automático. Teste grátis."
@@ -44,7 +44,7 @@ faq:
     answer: "Lembrete de retorno baseado no intervalo de corte do cliente. É o mais relevante e o que gera mais agendamentos. Ofertas sazonais e promoções pontuais vêm em segundo lugar."
 internalLinks:
   - "/blog/retencao/marketing-whatsapp-barbearia"
-  - "/blog/retencao/campanha-retorno-barbearia"
+  - "/blog/retencao/como-recuperar-clientes-parados"
   - "/blog/retencao/reativacao-clientes-whatsapp"
 ---
 

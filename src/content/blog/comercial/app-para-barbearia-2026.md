@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "money-pages"
 clusterLabel: "Páginas Comerciais"
 hub: "/blog/paginas-comerciais-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-09-21"
+updatedAt: "2025-10-23"
+reviewedAt: "2025-10-23"
 readingTime: 6
 ctaTitle: "O app é o WhatsApp. O sistema é o CorteZap."
 ctaBody: "Sem download, sem cadastro para o cliente. Teste 7 dias grátis."
@@ -45,7 +45,7 @@ faq:
 internalLinks:
   - "/blog/comercial/melhor-sistema-para-barbearia"
   - "/blog/comercial/sistema-sem-app-para-cliente"
-  - "/blog/comercial/software-para-barbearia"
+  - "/blog/comercial/como-escolher-software-barbearia"
 ---
 
 Todo ano aparece uma lista de "melhores apps para barbearia" com as mesmas ferramentas reorganizadas em ordem diferente. O que muda de verdade no mercado de tecnologia para barbearia não é tão frequente quanto os artigos sugerem.

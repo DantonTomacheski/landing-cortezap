@@ -19,9 +19,9 @@ funnelStage: "middle"
 cluster: "operacao-gestao"
 clusterLabel: "Gestão e Processo"
 hub: "/blog/gestao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-12-04"
+updatedAt: "2026-01-12"
+reviewedAt: "2026-01-12"
 readingTime: 5
 ctaTitle: "Agenda do dia na palma da mão"
 ctaBody: "No CorteZap, o painel mostra a agenda do dia com todos os clientes, horários e status de confirmação. Conferência em 2 minutos."
@@ -42,7 +42,7 @@ faq:
     answer: "Sim. Cada barbeiro deve saber quem são seus clientes do dia, quais serviços estão agendados e se há alguma observação (cliente novo, serviço especial). Não dependa do dono para informar tudo."
 internalLinks:
   - "/blog/gestao/como-rotina-abertura-fechamento"
-  - "/blog/gestao/como-recuperar-horario-vago-mesmo-dia"
+  - "/blog/retencao/preencher-horarios-vagos-barbearia"
   - "/blog/gestao/como-evitar-conflito-agenda-barbeiros"
 ---
 

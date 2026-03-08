@@ -19,9 +19,9 @@ funnelStage: "awareness"
 cluster: "retencao"
 clusterLabel: "Crescimento e Retenção"
 hub: "/blog/retencao-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2026-01-14"
+updatedAt: "2026-02-05"
+reviewedAt: "2026-02-05"
 readingTime: 6
 ctaTitle: "Acompanhe a recorrência pelo painel"
 ctaBody: "O CorteZap mostra o intervalo médio de cada cliente e alerta quando alguém está atrasando. Recorrência sob controle. Teste grátis."
@@ -44,7 +44,7 @@ faq:
     answer: "Sim. Um lembrete no WhatsApp quando o intervalo ideal de retorno se aproxima ('Seu corte está com 18 dias, quer agendar?') funciona como gatilho. Não é pressão, é serviço."
 internalLinks:
   - "/blog/retencao/vender-pacotes-barbearia"
-  - "/blog/retencao/retencao-clientes-barbearia"
+  - "/blog/retencao/como-fidelizar-clientes-barbearia"
   - "/blog/retencao/como-fidelizar-clientes-barbearia"
 ---
 

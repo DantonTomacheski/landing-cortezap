@@ -20,9 +20,9 @@ funnelStage: "decision"
 cluster: "comparativos"
 clusterLabel: "Comparativos"
 hub: "/blog/comparativos-software-barbearia"
-publishedAt: "2026-03-07"
-updatedAt: "2026-03-07"
-reviewedAt: "2026-03-07"
+publishedAt: "2025-11-24"
+updatedAt: "2026-01-02"
+reviewedAt: "2026-01-02"
 readingTime: 8
 ctaTitle: "Teste o CorteZap por 7 dias grátis"
 ctaBody: "Bot WhatsApp + gestão de barbearia. Veja se faz sentido para você. Sem cartão."
@@ -45,7 +45,7 @@ faq:
     answer: "Entre os listados, o CorteZap é o único com bot conversacional de WhatsApp usando API Oficial da Meta. Outros enviam notificações, mas não conduzem o agendamento dentro do chat."
 internalLinks:
   - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
-  - "/blog/comparativos/ranking-software-barbearia-2026"
+  - "/blog/comparativos/comparacao-sistemas-barbearia-2026"
   - "/blog/comparativos/comparacao-bot-whatsapp-barbearia"
 ---
 
