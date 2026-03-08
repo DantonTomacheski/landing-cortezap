@@ -88,3 +88,95 @@ body {
     transform: unset;
   }
 }
+
+/* Blog prose styles for rendered markdown */
+.prose-cortezap {
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .prose-cortezap {
+    font-size: 1.125rem;
+  }
+}
+
+.prose-cortezap h2 {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .prose-cortezap h2 {
+    font-size: 1.875rem;
+  }
+}
+
+.prose-cortezap h3 {
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose-cortezap p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-cortezap ul,
+.prose-cortezap ol {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose-cortezap ul {
+  list-style-type: disc;
+}
+
+.prose-cortezap ol {
+  list-style-type: decimal;
+}
+
+.prose-cortezap li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-cortezap li::marker {
+  color: var(--color-brand-400);
+}
+
+.prose-cortezap strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.prose-cortezap a {
+  color: var(--color-brand-300);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.prose-cortezap a:hover {
+  color: var(--color-text-primary);
+}
+
+.prose-cortezap blockquote {
+  border-left: 3px solid var(--color-brand-500);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.prose-cortezap hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
