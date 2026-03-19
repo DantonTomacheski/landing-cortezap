@@ -1,5 +1,16 @@
 {
   "framework": "astro",
+  "redirects": [
+    { "source": "/", "destination": "https://gestaoparabarbearia.com.br", "permanent": true },
+    { "source": "/sistema-para-barbearia", "destination": "https://gestaoparabarbearia.com.br/sistema-para-barbearia", "permanent": true },
+    { "source": "/agendamento-whatsapp-barbearia", "destination": "https://gestaoparabarbearia.com.br/agendamento-whatsapp-barbearia", "permanent": true },
+    { "source": "/painel-para-barbeiro", "destination": "https://gestaoparabarbearia.com.br/painel-para-barbeiro", "permanent": true },
+    { "source": "/politica-de-privacidade", "destination": "https://gestaoparabarbearia.com.br/politica-de-privacidade", "permanent": true },
+    { "source": "/termos-de-uso", "destination": "https://gestaoparabarbearia.com.br/termos-de-uso", "permanent": true },
+    { "source": "/sucesso", "destination": "https://gestaoparabarbearia.com.br/sucesso", "permanent": true },
+    { "source": "/voltar", "destination": "https://gestaoparabarbearia.com.br/voltar", "permanent": true },
+    { "source": "/:path*", "destination": "https://gestaoparabarbearia.com.br/:path*", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
